@@ -42,9 +42,10 @@
             </div>
         </nav>
     </header>
+
     <div class="container-fluid" id="firstContainer">
         <div class="row">
-            <div class="col-lg-7">
+            <div class="col-lg-6">
                 <div class="container">
                     <img src="img/pointillé.png" class="vecteur rounded mx-auto d-block" />
                 </div>
@@ -64,8 +65,8 @@
                     <img src="img/pointillé.png" class="vecteur rounded mx-auto d-block" />
                 </div>
             </div>
-            <div class="col-lg-4">
-                <img src="img/vetements.png" />
+            <div class="col-lg-6">
+                <img src="img/vetements.png" class="float-end" id="image-presentation"/>
             </div>
         </div>
     </div>
@@ -115,8 +116,6 @@
     </div>
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <p class="col-md-4 mb-0 text-body-secondary">© 2024 Company, Inc</p>
-            <img class="logo" src="img/logo.png" />
-
         <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
             <svg class="bi me-2" width="40" height="32">
                 <use xlink:href="#bootstrap"></use>
