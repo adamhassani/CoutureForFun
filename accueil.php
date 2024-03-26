@@ -32,8 +32,12 @@
                     </ul>
                 </div>
                 <div class="d-flex">
-                    <button class="btn ">Se connecter</button>
-                    <button class="btn rounded-pill">S'inscrire</button>
+                    <a href="connection.php">
+                        <button class="btn">Se connecter</button>
+                    </a>
+                    <a href="inscription.php">
+                        <button class="btn btn-primary rounded-pill">S'inscrire</button>
+                    </a>
                 </div>
             </div>
         </nav>
@@ -81,6 +85,7 @@
                 </div>
             </div>
         </div>
+<<<<<<< Updated upstream
         <div class="container-fluid text-center" id="troisiemeContainer">
             <br><br>
             <p>SERVICES</p>
@@ -126,6 +131,44 @@
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Privaty Policy</a></li>
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contact Us</a></li>
                 </ul>
+=======
+    </div>
+    <div class="container-fluid text-center">
+        <br><br>
+        <p>NOS CLIENTS</p>
+        <h3>Ce qu'ils pensent de nous</h3>
+        <div class="row justify-content-center">
+            <div class="paragrapheClients col-lg-2 shadow p-3 mb-5 bg-white rounded">
+                <p>htrhuthut tjiouthhugituith jgriuhigthgui thuguhihughug hugthuighuigthuigt gthuighuithugthug gtghuithughugh uhithgh</p>
+            </div>
+            <div class="paragrapheClients col-lg-2 shadow p-3 mb-5 bg-white rounded">
+                <p>hirttuti tjigtiuuti tiutuituut tuiru ru urtuyio oip"ép "éou u'o u 'o u'u "'op&^gijg ero ui </p>
+            </div>
+            <div class="paragrapheClients col-lg-2 shadow p-3 mb-5 bg-white rounded">
+                <p>tiotiorjitjo itjoitoit triotri triotiotioi hhhhhhhhhh hrhrhhrhr rhrhrhtht hrhrhh h hrhrr hh rh hrh hrhhrh hh rh hr hhrhr </p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-center" id="troisiemeContainer">
+        <br><br>
+        <p>SERVICES</p>
+        <h3>Des offres adaptées à vous</h3>
+        <div class="row justify-content-center">
+            <div class="col-lg-3">
+                <img class="mx-auto d-block img" src="img/coutureDébutant.png" />
+                <p class="shadow p-3 mb-5 bg-white img">rgnn ie ii irri yziqoz r rrezèr rklrekj otioi hhhhhhhhhh hrhrhhrhr rhrhrhtht hrhrhh h hrhrr rer j k</p>
+                <button class="btn btn-primary">En savoir Plus</button>
+            </div>
+            <div class="col-lg-3">
+                <img class="mx-auto d-block img" src="img/couturePatrons.png" />
+                <p class="shadow p-3 mb-5 bg-white img">rgnn rklrotioi hhhhhhhhhh hrhrhhrhr rhrhrhtht hrhrhh h hrhrr otioi hhhhhhhhhh hrhrhhrhr rhrhrhtht hrhrhh h hrhrr ekj rer j k</p>
+                <button class="btn btn-primary">En savoir Plus</button>
+            </div>
+            <div class="col-lg-3">
+                <img class="mx-auto d-block img" src="img/coutureAvancée.png" />
+                <p class="shadow p-3 mb-5 bg-white img">rgnn rklrotioi hhhhhhhhhh hrhrhhrhr rhrhrhtht hrhrhh h hrhrr otioi hhhhhhhhhh hrhrhhrhr rhrhrhtht hrhrhh h hrhrr ekj rer j k</p>
+                <button class="btn btn-primary">En savoir Plus</button>
+>>>>>>> Stashed changes
             </div>
 
             <div class="col mb-3">
