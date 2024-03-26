@@ -42,12 +42,15 @@
             </div>
         </nav>
     </header>
+
     <div class="container-fluid" id="firstContainer">
-        <div class="row width:100%">
+        <div class="row">
+
             <div class="col-lg-7">
                 <div class="container">
                     <img src="img/pointillé.png" class="vecteur rounded mx-auto d-block" />
                 </div>
+                
                 <div class="container">
                     <h2>Couture & Apprentissage :<br>
                         Fournitures et Cours Experts
@@ -58,14 +61,15 @@
                     <div class="d-flex justify-content-center bouttonSouscrire">
                         <button class="btn btn-dark">Souscrire à cette offre</button>
                     </div>
-
                 </div>
+                
                 <div class="container">
                     <img src="img/pointillé.png" class="vecteur rounded mx-auto d-block" />
                 </div>
             </div>
+
             <div class="col-lg-4">
-                <img src="img/vetements.png" />
+                <img src="img/vetements.png" id="image-presentation"/>
             </div>
         </div>
     </div>

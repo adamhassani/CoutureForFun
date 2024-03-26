@@ -1,12 +1,10 @@
+
 .text{
     color:#ffc300;
 }
-.nav-link{
-    padding: 0px 100px 0px 100px;
-}
 #firstContainer{
     background-color: #ffc300;
-    padding-right: 80px;
+    object-fit: contain;
 }
 
 h2{
@@ -37,4 +35,7 @@ h3{
 }
 .div{
     padding-bottom: 50px;
+}
+#image-presentation{
+    max-width: 100%;
 }
