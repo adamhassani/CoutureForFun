@@ -42,15 +42,12 @@
             </div>
         </nav>
     </header>
-
     <div class="container-fluid" id="firstContainer">
         <div class="row">
-
             <div class="col-lg-7">
                 <div class="container">
                     <img src="img/pointillé.png" class="vecteur rounded mx-auto d-block" />
                 </div>
-                
                 <div class="container">
                     <h2>Couture & Apprentissage :<br>
                         Fournitures et Cours Experts
@@ -59,17 +56,16 @@
                         <p class="paragraphe">Découvrez notre sélection de fournitures et cours experts<br> pour exprimer votre créativité à travers la couture.</p>
                     </div>
                     <div class="d-flex justify-content-center bouttonSouscrire">
-                        <button class="btn btn-dark">Souscrire à cette offre</button>
+                        <button class="btn btn-dark rounded-pill">Souscrire à cette offre</button>
                     </div>
+
                 </div>
-                
                 <div class="container">
                     <img src="img/pointillé.png" class="vecteur rounded mx-auto d-block" />
                 </div>
             </div>
-
             <div class="col-lg-4">
-                <img src="img/vetements.png" id="image-presentation"/>
+                <img src="img/vetements.png" />
             </div>
         </div>
     </div>
@@ -94,62 +90,45 @@
         <p>SERVICES</p>
         <h3>Des offres adaptées à vous</h3>
         <div class="row justify-content-center">
-            <div class="col-lg-3 div">
+            <div class="col-lg-3 services">
                 <img class="mx-auto d-block img" src="img/coutureDébutant.png" />
-                <h3 class="p-3 mb-5 bg-white">Couture pour débutants</h3>
-                <button class="btn btn-primary">En savoir Plus</button>
+                <div class="p-3 mb-5 bg-white">
+                    <h3>Couture pour débutants</h3>
+                    <button class="btn btn-primary rounded-pill">En savoir Plus</button>
+                </div>
             </div>
             <div class="col-lg-3">
                 <img class="mx-auto d-block img" src="img/couturePatrons.png" />
-                <h3 class="p-3 mb-5 bg-white">Couture avec patrons</h3>
-                <button class="btn btn-primary">En savoir Plus</button>
+                <div class="p-3 mb-5 bg-white">
+                    <h3>Couture avec patrons</h3>
+                    <button class="btn btn-primary rounded-pill">En savoir Plus</button>
+                </div>
             </div>
             <div class="col-lg-3">
                 <img class="mx-auto d-block img" src="img/coutureAvancée.png" />
-                <h3 class="p-3 mb-5 bg-white">Couture avancée</h3>
-                <button class="btn btn-primary">En savoir Plus</button>
+                <div class="p-3 mb-5 bg-white">
+                    <h3>Couture avancée</h3>
+                    <button class="btn btn-primary rounded-pill">En savoir Plus</button>
+                </div>
             </div>
         </div>
     </div>
-    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <p class="col-md-4 mb-0 text-body-secondary">© 2024 Company, Inc</p>
+            <img class="logo" src="img/logo.png" />
 
-        <div class="col mb-3">
-            <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-                <svg class="bi me-2" width="40" height="32">
-                    <use xlink:href="#bootstrap"></use>
-                </svg>
-            </a>
-            <p class="text-body-secondary">© 2024</p>
-        </div>
+        <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <svg class="bi me-2" width="40" height="32">
+                <use xlink:href="#bootstrap"></use>
+            </svg>
+        </a>
 
-        <div class="col mb-3">
-
-        </div>
-
-        <div class="col mb-3">
-            <h5>LearnMore</h5>
-            <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Environment</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Jobs</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Privaty Policy</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contact Us</a></li>
-            </ul>
-        </div>
-
-        <div class="col mb-3">
-            <h5>Contact Us</h5>
-            <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Reservation : 12-34-56-78-90</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Accueil : 09-87-65-43-21</a></li>
-            </ul>
-        </div>
-        <div class="col mb-3">
-            <h5>Social</h5>
-            <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-            </ul>
-        </div>
+        <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="accueil.php" class="nav-link px-2 text-body-secondary">Accueil</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Nos Cours</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Tarifs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Contacts</a></li>
+        </ul>
     </footer>
 </body>
 

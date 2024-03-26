@@ -1,9 +1,12 @@
-
 .text{
     color:#ffc300;
 }
+.nav-link{
+    padding: 0px 100px 0px 100px;
+}
 #firstContainer{
     background-color: #ffc300;
+    padding-right: 80px;
 }
 
 h2{
@@ -11,7 +14,7 @@ h2{
     padding-bottom: 50px;
 }
 h3{
-    padding-bottom:50px;
+    padding-bottom:20px;
 }
 .vecteur{
     padding-top: 120px;
@@ -24,7 +27,8 @@ h3{
     margin-top: 100px;
 }
 .paragrapheClients{
-    margin:100px;
+    margin:30px;
+    margin-bottom:50px;
 }
 #troisiemeContainer{
     background-color: #ffc300;
@@ -32,7 +36,13 @@ h3{
 .img{
     width: 355px;
 }
-.div{
+.services{
     padding-bottom: 50px;
 }
-
+footer{
+    margin:50px;
+}
+.logo{
+    width:5%;
+    height:auto;
+}
