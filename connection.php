@@ -17,7 +17,7 @@
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item mx-3">
-                            <a class="nav-link" href="#">Accueil</a>
+                            <a class="nav-link" href="accueil.php">Accueil</a>
                         </li>
                         <li class="nav-item mx-3">
                             <a class="nav-link" href="#">Nos Cours</a>

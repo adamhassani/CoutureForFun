@@ -17,7 +17,7 @@
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item mx-3">
-                            <a class="nav-link" href="#">Accueil</a>
+                            <a class="nav-link" href="accueil.php">Accueil</a>
                         </li>
                         <li class="nav-item mx-3">
                             <a class="nav-link" href="#">Nos Cours</a>
@@ -31,8 +31,8 @@
                     </ul>
                 </div>
                 <div class="d-flex">
-                    <a href="connection.php">
-                        <button class="btn">Se connecter</button>
+                    <a href="inscription.php">
+                        <button class="btn" href="inscription.php">Se connecter</button>
                     </a>
                     <a href="inscription.php">
                         <button class="btn btn-primary rounded-pill">S'inscrire</button>
