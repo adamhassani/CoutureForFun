@@ -6,85 +6,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
     <link href="bootstrap.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <link href="css-accueil/style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/logo1.png">
 
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <img src="img/logo.png" alt="logo" style="width:50px; height:auto" />
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item mx-3">
-                            <a class="nav-link" href="accueil.php">Accueil</a>
-                        </li>
-                        <li class="nav-item mx-3">
-                            <a class="nav-link" href="#">Nos Cours</a>
-                        </li>
-                        <li class="nav-item mx-3">
-                            <a class="nav-link" href="#">Tarifs</a>
-                        </li>
-                        <li class="nav-item mx-3">
-                            <a class="nav-link" href="#">Contacts</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="d-flex">
-                    <a href="inscription.php">
-                        <button class="btn" href="inscription.php">Se connecter</button>
-                    </a>
-                    <a href="inscription.php">
-                        <button class="btn btn-primary rounded-pill">S'inscrire</button>
-                    </a>
+    <?php include 'navbar.php'; ?>
+
+    <div class="container mw-100 bg-primary">
+        <div class="row d-flex">
+            <div class="col-xl-6 my-auto">
+                <div class="d-flex justify-content-center">
+                    <div class="border">
+                        <img src="img/pointille.png" class="img-fluid mw-100 mb-5"/>
+                        <h1 class="mt-5"><strong>Couture & Apprentissage :</br>Fournitures et Cours Experts</strong></h1>
+                        <p class="mt-5">Découvrez notre sélection de fournitures et cours experts pour exprimer votre créativité à travers la couture.</p>
+                    </div>
                 </div>
             </div>
-        </nav>
-    </header>
 
-    <div class="container-fluid" id="firstContainer">
+            <div class="col-xl-6 d-none d-xl-block">
+                <img src="img/accueil.png" alt="accueil" class="img-responsive" id="presentation" />
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="container-fluid bg-primary" id="firstContainer">
+    
         <div class="row">
             <div class="col-lg-6">
                 <div class="container">
                     <img src="img/pointillé.png" class="vecteur rounded mx-auto d-block" />
                 </div>
                 <div class="container">
-                    <h2>Couture & Apprentissage :<br>
+                    <h1>Couture & Apprentissage :<br>
                         Fournitures et Cours Experts
-                    </h2>
-                    <div class="d-flex justify-content-center">
-                        <p class="paragraphe">Découvrez notre sélection de fournitures et cours experts<br> pour exprimer votre créativité à travers la couture.</p>
-                    </div>
-                    <div class="d-flex justify-content-center bouttonSouscrire">
-                        <button class="btn btn-dark rounded-pill">Souscrire à cette offre</button>
-                    </div>
+                        </h>
+                        <div class="d-flex justify-content-center">
+                            <p class="paragraphe">Découvrez notre sélection de fournitures et cours experts<br> pour exprimer votre créativité à travers la couture.</p>
+                        </div>
+                        <div class="d-flex justify-content-center bouttonSouscrire">
+                            <button class="btn btn-blue rounded-pill">Souscrire à cette offre</button>
+                        </div>
 
                 </div>
                 <div class="container">
                     <img src="img/pointillé.png" class="vecteur rounded mx-auto d-block" />
                 </div>
             </div>
-            <div class="col-lg-6">
-                <img src="img/vetements.png" class="float-end" id="image-presentation"/>
+            <div class="col-xl-6 d-none d-xl-block">
+                <img src="img/vetements.png" class="float-end" id="image-presentation" />
             </div>
         </div>
-    </div>
-    <div class="container-fluid text-center">
-        <br><br>
-        <p>NOS CLIENTS</p>
-        <h3>Ce qu'ils pensent de nous</h3>
-        <div class="row justify-content-center">
-            <div class="paragrapheClients col-lg-2 shadow p-3 mb-5 bg-white rounded">
-                <p>htrhuthut tjiouthhugituith jgriuhigthgui thuguhihughug hugthuighuigthuigt gthuighuithugthug gtghuithughugh uhithgh</p>
-            </div>
-            <div class="paragrapheClients col-lg-2 shadow p-3 mb-5 bg-white rounded">
-                <p>hirttuti tjigtiuuti tiutuituut tuiru ru urtuyio oip"ép "éou u'o u 'o u'u "'op&^gijg ero ui </p>
-            </div>
-            <div class="paragrapheClients col-lg-2 shadow p-3 mb-5 bg-white rounded">
-                <p>tiotiorjitjo itjoitoit triotri triotiotioi hhhhhhhhhh hrhrhhrhr rhrhrhtht hrhrhh h hrhrr hh rh hrh hrhhrh hh rh hr hhrhr </p>
-            </div>
+    </div> -->
+
+
+    <div class="container my-5">
+        <div class="row ">
+            <h6 class="d-flex justify-content-center align-items-center mt-5 mb-2">NOS CLIENTS</h6>
         </div>
+        <div class="row">
+            <h2 class="d-flex justify-content-center">Ce qu'ils pensent de nous.</h2>
+        </div>
+        <div class="row d-flex justify-content-center align-items-center ">
+            <div class="col d-flex">
+                <div class="card shadow-lg p-3 mb-5 mt-5 mx-3 bg-body rounded">
+                    <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare felis ac magna malesuada congue. Phasellus rutrum ac lacus ut suscipit. Ut sed convallis nunc.”</p>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img class="avatar ms-0" alt="avatar" src="img/pdp.jpg">
+                        </div>
+                        <div class="col-sm-8">
+                            <p>John Doe</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col d-flex">
+                <div class="card shadow-lg p-3 mb-5 mt-5 mx-3 bg-body rounded">
+                    <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare felis ac magna malesuada congue. Phasellus rutrum ac lacus ut suscipit. Ut sed convallis nunc.”</p>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img class="avatar ms-0" alt="avatar" src="img/pdp.jpg">
+                        </div>
+                        <div class="col-sm-8">
+                            <p>John Doe</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col d-flex">
+                <div class="card shadow-lg p-3 mb-5 mt-5 mx-3 bg-body rounded">
+                    <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare felis ac magna malesuada congue. Phasellus rutrum ac lacus ut suscipit. Ut sed convallis nunc.”</p>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img class="avatar ms-0" alt="avatar" src="img/pdp.jpg">
+                        </div>
+                        <div class="col-sm-8">
+                            <p>John Doe</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
     </div>
     <div class="container-fluid text-center" id="troisiemeContainer">
         <br><br>
