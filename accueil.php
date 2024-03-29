@@ -14,52 +14,59 @@
 <body>
     <?php include 'navbar.php'; ?>
 
-    <div class="container mw-100 bg-primary">
-        <div class="row d-flex">
-            <div class="col-xl-6 my-auto">
+    <div class="container-fluid bg-primary">
+        <div class="row align-items-center">
+            <div class="col-12 col-xl-6 px-5">
                 <div class="d-flex justify-content-center">
-                    <div class="border">
-                        <img src="img/pointille.png" class="img-fluid mw-100 mb-5"/>
+                    <div class="w-100">
+                        <img src="img/pointille.png" class="img-fluid mb-5 pe-5 d-none d-xl-block w-100" />
                         <h1 class="mt-5"><strong>Couture & Apprentissage :</br>Fournitures et Cours Experts</strong></h1>
-                        <p class="mt-5">Découvrez notre sélection de fournitures et cours experts pour exprimer votre créativité à travers la couture.</p>
+                        <p class="my-5 me-5 text-muted fs-3">Découvrez notre sélection de fournitures et cours experts pour exprimer votre créativité à travers la couture.</p>
+                        <div class="d-grid gap-2 col-5 mx-auto">
+                            <a class="btn btn-secondary btn-lg rounded-pill my-2" href="#">Souscrire à cette offre</a>
+                        </div>
+                        <img src="img/pointille.png" class="img-fluid mt-5 pe-5 d-none d-xl-block w-100" />
                     </div>
                 </div>
+            </div>
+            <div class="col-12 col-xl-6 d-none d-xl-block">
+                <img src="img/accueil.png" alt="accueil" class="img-fluid" id="presentation" />
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="container ps-5 mw-100 bg-primary">
+        <div class="row">
+            <div class="col-xl-6 m-auto px-5">
+                <div class="d-flex justify-content-center">
+
+                    <div class="m-auto">
+                        <div class="row w-70">
+                            <img src="img/pointille.png" class="img-fluid mb-5 pe-5" />
+                        </div>
+                        <div class="row custom-row">
+                            <h1 class="mt-5"><strong>Couture & Apprentissage :</br>Fournitures et Cours Experts</strong></h1>
+                        </div>
+                        <div class="row">
+                            <p class="my-5 me-5 text-muted fs-1">Découvrez notre sélection de fournitures et cours experts pour exprimer votre créativité à travers la couture.</p>
+                        </div>
+                        <div class="row d-grid gap-2 col-4">
+                                <button class="btn btn-secondary btn-lg rounded-pill" type="button" href="#">Souscrire à cette offre</button>
+                        </div>
+                        <div class="row">
+                            <img src="img/pointille.png" class="img-fluid mt-5 pe-5" />
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
             <div class="col-xl-6 d-none d-xl-block">
                 <img src="img/accueil.png" alt="accueil" class="img-responsive" id="presentation" />
             </div>
         </div>
-    </div>
-
-    <!-- <div class="container-fluid bg-primary" id="firstContainer">
-    
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="container">
-                    <img src="img/pointillé.png" class="vecteur rounded mx-auto d-block" />
-                </div>
-                <div class="container">
-                    <h1>Couture & Apprentissage :<br>
-                        Fournitures et Cours Experts
-                        </h>
-                        <div class="d-flex justify-content-center">
-                            <p class="paragraphe">Découvrez notre sélection de fournitures et cours experts<br> pour exprimer votre créativité à travers la couture.</p>
-                        </div>
-                        <div class="d-flex justify-content-center bouttonSouscrire">
-                            <button class="btn btn-blue rounded-pill">Souscrire à cette offre</button>
-                        </div>
-
-                </div>
-                <div class="container">
-                    <img src="img/pointillé.png" class="vecteur rounded mx-auto d-block" />
-                </div>
-            </div>
-            <div class="col-xl-6 d-none d-xl-block">
-                <img src="img/vetements.png" class="float-end" id="image-presentation" />
-            </div>
-        </div>
     </div> -->
+
 
 
     <div class="container my-5">

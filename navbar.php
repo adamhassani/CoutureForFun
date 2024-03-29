@@ -25,7 +25,7 @@
             </div>
             <div class="d-flex me-5">
                 <a href="connection.php">
-                    <button class="btn" href="inscription.php">Se connecter</button>
+                    <button class="btn">Se connecter</button>
                 </a>
                 <a href="inscription.php">
                     <button class="btn btn-blue rounded-pill">S'inscrire</button>
