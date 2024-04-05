@@ -19,7 +19,7 @@
                         <a class="nav-link" href="devis.php">Devis</a>
                     </li>
                     <li class="nav-item mx-3">
-                        <a class="nav-link" href="#">Contacts</a>
+                        <a class="nav-link" href="contact.php">Contacts</a>
                     </li>
                 </ul>
             </div>

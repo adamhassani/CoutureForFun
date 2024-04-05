@@ -7,7 +7,7 @@
     <title>Se connecter.</title>
     <link href="bootstrap.css" rel="stylesheet">
     <link href="cssform/style1.css" rel="stylesheet">
-    <link href="errStyle.css" rel = "stylesheet">
+    <link href="errStyle.css" rel="stylesheet">
     <link href="cssform/style1.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" sizes="64x64" href="img/logo1.png">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -33,29 +33,28 @@
                                     <form method="post">
                                         <div class="form-outline mb-4">
                                             <label class="form-label" for="formMail"><strong>Address email</strong></label>
-                                            <input type="text" id="formMail" placeholder="Entrez votre adresse email." class="form-control form-control-lg rounded-pill" name="mailConn" />
+                                            <input type="text" id="formMail" placeholder="Entrez votre adresse email." class="form-control form-control-lg rounded-4" name="mailConn" />
                                             <span class="error-message" id="mailConnError"></span>
                                         </div>
 
                                         <div class="form-outline mb-4">
                                             <label class="form-label" for="formMDP"><strong>Mot De Passe</strong></label>
-                                            <a class="" href="connection.php" id="connect-shortcut">Mot de passe oublie</a>
-                                            <input type="password" id="formMDP" placeholder="Entrez un mot de passe sécurisé" class="form-control form-control-lg rounded-pill" name = "mdpConn"/>
+                                            <input type="password" id="formMDP" placeholder="Entrez un mot de passe sécurisé" class="form-control form-control-lg rounded-4" name="mdpConn" />
                                             <span class="error-message" id="passConnError"></span>
                                         </div>
 
                                         <div class="form-check mb-4">
                                             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                            <label class="form-check-label" for="formCGU">Se souvenir de moi</label>
+                                            <label class="form-check-label" for="formCGU">Ne te souvient pas de moi</label>
                                         </div>
 
                                         <div class="d-flex justify-content-end pt-3 mb-1">
-                                            <button type="submit" class="btn btn-primary btn-block w-100 rounded-pill" name="connection">Se connecter</button>
+                                            <button type="submit" class="btn btn-blue btn-block w-100 rounded-4" name="connection">Se connecter</button>
                                         </div>
 
                                         <div class="d-flex justify-content-center">
                                             <p class="me-1">Vous n'avez pas de compte ?</p>
-                                            <a href="inscription.php" id="connect-shortcut">S'inscrire</a>
+                                            <a class="text-primary" href="inscription.php" id="connect-shortcut">S'inscrire</a>
                                         </div>
                                     </form>
                                 </div>
