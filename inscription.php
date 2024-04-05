@@ -59,8 +59,8 @@
                                         </div>
 
                                         <div class="form-check mb-4">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                            <label class="form-check-label" for="formCGU">J'accepte les termes et conditions d'utilisation.</label>
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" name = "flexCheckDefault">
+                                            <label class="form-check-label" for="formCGU">J'accepte les termes et conditions d'utilisation.</label><br>
                                             <span class = "error-message" id = "termError"></span>
                                         </div>
 

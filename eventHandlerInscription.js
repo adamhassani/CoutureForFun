@@ -5,20 +5,28 @@ function validateForm()
     var prenom = document.getElementById("formPrenom").value.trim();
     var mail = document.getElementById("formMail").value.trim();
     var mdp = document.getElementById("formMDP").value;
+    var term =document.querySelector("input[name='flexCheckDefault']:checked");
+
     // get the elements for error display
     var nomError = document.getElementById("nomError");
     var prenomError = document.getElementById("prenomError");
     var mailError = document.getElementById("mailError");
     var mdpError = document.getElementById("mdpError");
+    var termError = document.getElementById("termError");
 
+    
     // Reset error messages by default they are empty 
     nomError.innerText = "";
     prenomError.innerText = "";
     mailError.innerText = "";
     mdpError.innerText = "";
-
+    termError.innerText = "";
     var isValid = true; // by default isValid is true
-
+    if (!term)
+    {   
+        termError.innerText = "Il faut accepter les termes et conditions d'utilisation !";
+        isValid= false;
+    }
     if (nom === "" || !isValidName(nom)) { // verify the nom
         nomError.innerText = "Le nom doit contenir au moins 2 lettres sans chiffres";
         isValid = false; // set it to false cause all the section need to be valid

@@ -17,7 +17,7 @@ if (isset($_POST['inscrire'])) {
         $conn = new PDO("mysql:host=$servername", $username, $password);
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-        // Check if the database exists
+        // Check if the database exists 
         $result = $conn->query("SHOW DATABASES LIKE '$dbname'");
         if ($result->rowCount() == 0) {
             // Database does not exist, so create it
@@ -51,7 +51,7 @@ if (isset($_POST['inscrire'])) {
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         // Check if the email already exists in the Clients table
         $sql_check_email = "SELECT COUNT(*) as mail_count FROM Clients WHERE mail = ?";
-        $stmt = $conn->prepare($sql_check_email);
+        $stmt = $conn->prepare($sql_check_email); 
         $stmt->execute([$mail]);
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
@@ -60,7 +60,7 @@ if (isset($_POST['inscrire'])) {
             $sql_insert_client = "INSERT INTO Clients(nom, prenom, mail, motDePasse) VALUES (?, ?, ?, ?)";
             $stmt = $conn->prepare($sql_insert_client); //seperate the the queries data from the logic to prevent any sql injection 
             $stmt->execute([$nom, $prenom, $mail, $mdp]); // array for place holders instead of binding seperatly
-            echo '<script>mailInsCheck();</script>';
+            echo '<script>mailInsCheck();</script>'; 
             echo '<script>alert("Added the mail")</script>';
         } else {
             echo '<script>mailInsError();</script>';

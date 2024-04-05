@@ -13,7 +13,6 @@
 
 <body>
     <?php include 'navbar.php'; ?>
-
     <div class="container-fluid bg-primary">
         <div class="row align-items-center">
             <div class="col-12 col-xl-6 px-5">

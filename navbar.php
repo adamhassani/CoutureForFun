@@ -24,12 +24,18 @@
                 </ul>
             </div>
             <div class="d-flex me-5">
-                <a href="connection.php">
-                    <button class="btn">Se connecter</button>
-                </a>
-                <a href="inscription.php">
-                    <button class="btn btn-blue rounded-pill">S'inscrire</button>
-                </a>
+                <?php 
+                    // Check if the user is logged in
+                    if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
+                        // If logged in, display the user's name and a logout button
+                        echo '<button class="btn">' . $_SESSION['username'] . '</button>';
+                        echo '<a href="logout.php"><button class="btn btn-blue rounded-pill">Déconnexion</button></a>';
+                    } else {
+                        // If not logged in  display login and signup buttons
+                        echo '<a href="connection.php"><button class="btn">Se connecter</button></a>';
+                        echo '<a href="inscription.php"><button class="btn btn-blue rounded-pill">S\'inscrire</button></a>';
+                    }
+                ?>
             </div>
         </div>
     </nav>

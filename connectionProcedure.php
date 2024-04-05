@@ -1,10 +1,9 @@
 <?php
-
+session_start();
 $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "baseDonnee";
-
 if (isset($_POST['connection'])) {
     
     $mailConn = $_POST['mailConn'];
@@ -66,10 +65,15 @@ if (isset($_POST['connection'])) {
             if ($userConn['motDePasse'] == $mdpConn) {
                 echo '<script>passConnCheck();</script>'; // remove the pass error in case it appears
                 echo '<script>alert("Correct password");</script>';
+                $_SESSION['logged_in'] = true;
+                $_SESSION['username'] = $userConn['prenom'].$userConn['nom'];
+                echo '<script>window.location.href = "accueil.php"</script>'; // redirect to the initial page
             } else {
                 echo '<script>passConnErrorMsg();</script>'; // add pass error message
+                
             }
         } else {
+            
             echo '<script>mailConnErrorMsg();</script>'; // add mail error message 
             echo '<script>passConnCheck();</script>'; // remove pass error so the client is not confused by the errors
         }
