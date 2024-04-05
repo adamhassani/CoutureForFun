@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil</title>
+    <title>Se connecter.</title>
     <link href="bootstrap.css" rel="stylesheet">
     <link href="cssinscription/style1.css" rel="stylesheet">
     <link href="errStyle.css" rel = "stylesheet">
