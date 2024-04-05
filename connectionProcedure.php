@@ -65,8 +65,12 @@ if (isset($_POST['connection'])) {
             if ($userConn['motDePasse'] == $mdpConn) {
                 echo '<script>passConnCheck();</script>'; // remove the pass error in case it appears
                 echo '<script>alert("Correct password");</script>';
-                $_SESSION['logged_in'] = true;
-                $_SESSION['username'] = $userConn['prenom'].$userConn['nom'];
+                $_SESSION['logged_in'] = true; // vsession variable logged_in true
+                $_SESSION['user_nom'] =$userConn['nom'];
+                $_SESSION['user_prenom'] =$userConn['prenom'];
+                $_SESSION['user_mail'] =$userConn['mail'];
+                //$_SESSION['user_cours'] =;
+                $_SESSION['username'] = $userConn['prenom']." ".$userConn['nom']; // get the username 
                 echo '<script>window.location.href = "accueil.php"</script>'; // redirect to the initial page
             } else {
                 echo '<script>passConnErrorMsg();</script>'; // add pass error message

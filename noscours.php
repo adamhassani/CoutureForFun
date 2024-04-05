@@ -28,7 +28,11 @@
                     <p>Découvrez la couture avec notre formation pour débutants. Nos experts vous guideront pas à pas pour maîtriser les bases, de la lecture de patrons aux techniques essentielles. Devenez fier(e) de vos premières créations !</p>
                     <hr>
                     <div class="d-flex justify-content-end pt-3 mb-3">
-                        <button type="submit" class="btn btn-blue btn-block w-100 rounded-pill" name="envoyer-devis">Souscrire à cette offre</button>
+                        <?php
+                        if ($_SESSION['logged_in'] && $_SESSION['logged_in'] == true){
+                        echo '<button type="submit" class="btn btn-blue btn-block w-100 rounded-pill" name="envoyer-devis">Souscrire à cette offre</button>';
+                        }
+                        ?>
                     </div>
                 </div>
             </div>
@@ -40,7 +44,11 @@
                     <p>Vous avez des bases en couture ? Apprenez à maîtriser l'utilisation des patrons pour réaliser des vêtements sur-mesure. Nos formateurs vous enseigneront les techniques d'ajustement et de transformation des modèles.</p>
                     <hr>
                     <div class="d-flex justify-content-end pt-3 mb-3">
-                        <button type="submit" class="btn btn-blue btn-block w-100 rounded-pill" name="envoyer-devis">Souscrire à cette offre</button>
+                        <?php
+                        if ($_SESSION['logged_in'] && $_SESSION['logged_in'] == true){
+                        echo '<button type="submit" class="btn btn-blue btn-block w-100 rounded-pill" name="envoyer-devis">Souscrire à cette offre</button>';
+                        }
+                        ?>                    
                     </div>
                 </div>
             </div>
@@ -52,7 +60,11 @@
                     <p>Vous êtes couturier(ère) confirmé(e) ? Repoussez vos limites avec notre formation avancée. Découvrez des techniques de pointe comme la couture de tissus délicats ou la création de vos propres patrons. Devenez un(e) créateur(trice) unique.</p>
                     <hr>
                     <div class="d-flex justify-content-end pt-3 mb-3">
-                        <button type="submit" class="btn btn-blue btn-block w-100 rounded-pill" name="envoyer-devis">Souscrire à cette offre</button>
+                        <?php
+                        if ($_SESSION['logged_in'] && $_SESSION['logged_in'] == true){
+                        echo '<button type="submit" class="btn btn-blue btn-block w-100 rounded-pill" name="envoyer-devis">Souscrire à cette offre</button>';
+                        }
+                        ?>                    
                     </div>
                 </div>
             </div>

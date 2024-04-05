@@ -25,6 +25,7 @@
             </div>
             <div class="d-flex me-5">
                 <?php 
+                    session_start();
                     // Check if the user is logged in
                     if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
                         // If logged in, display the user's name and a logout button
