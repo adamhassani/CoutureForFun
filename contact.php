@@ -29,14 +29,14 @@
                                     <h1 class="mb-0">Contactez-nous</h1>
                                     <p class="mb-5 text-muted">Contactez notre équipe pour en savoir plus sur nos offres chez Couture for Fun.</p>
 
-                                    <div class="form-outline">
+                                    <div class="form-outline mb-3">
                                         <label class="form-label mx-2" for="formNom"><strong>Nom</strong></label>
                                         <input type="text" id="formNom" placeholder="Entrez votre nom." class="form-control form-control-lg rounded-pill" name="nom" />
                                         <span class="error-message" id="nomError"></span>
                                     </div>
 
                                     <form method="post">
-                                        <div class="form-outline mb-4">
+                                        <div class="form-outline mb-3">
                                             <label class="form-label" for="formMail"><strong>Address email</strong></label>
                                             <input type="text" id="formMail" placeholder="Entrez votre adresse email." class="form-control form-control-lg rounded-pill" name="mailConn" />
                                             <span class="error-message" id="mailConnError"></span>
