@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil</title>
+    <title>Couture For Fun</title>
     <link href="bootstrap.css" rel="stylesheet">
     <link href="css-accueil/style.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="img/logo1.png">
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -34,39 +34,6 @@
             </div>
         </div>
     </div>
-
-    <!-- <div class="container ps-5 mw-100 bg-primary">
-        <div class="row">
-            <div class="col-xl-6 m-auto px-5">
-                <div class="d-flex justify-content-center">
-
-                    <div class="m-auto">
-                        <div class="row w-70">
-                            <img src="img/pointille.png" class="img-fluid mb-5 pe-5" />
-                        </div>
-                        <div class="row custom-row">
-                            <h1 class="mt-5"><strong>Couture & Apprentissage :</br>Fournitures et Cours Experts</strong></h1>
-                        </div>
-                        <div class="row">
-                            <p class="my-5 me-5 text-muted fs-1">Découvrez notre sélection de fournitures et cours experts pour exprimer votre créativité à travers la couture.</p>
-                        </div>
-                        <div class="row d-grid gap-2 col-4">
-                                <button class="btn btn-secondary btn-lg rounded-pill" type="button" href="#">Souscrire à cette offre</button>
-                        </div>
-                        <div class="row">
-                            <img src="img/pointille.png" class="img-fluid mt-5 pe-5" />
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="col-xl-6 d-none d-xl-block">
-                <img src="img/accueil.png" alt="accueil" class="img-responsive" id="presentation" />
-            </div>
-        </div>
-    </div> -->
-
 
 
     <div class="container my-5">
@@ -153,21 +120,7 @@
             </div>
         </div>
     </div>
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <p class="col-md-4 mb-0 text-body-secondary">© 2024 Company, Inc</p>
-        <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-            <svg class="bi me-2" width="40" height="32">
-                <use xlink:href="#bootstrap"></use>
-            </svg>
-        </a>
-
-        <ul class="nav col-md-4 justify-content-end">
-            <li class="nav-item"><a href="accueil.php" class="nav-link px-2 text-body-secondary">Accueil</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Nos Cours</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Tarifs</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Contacts</a></li>
-        </ul>
-    </footer>
+    <?php include 'footer.php'; ?>
 </body>
 
 </html>

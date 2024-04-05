@@ -13,10 +13,10 @@
                         <a class="nav-link" href="accueil.php">Accueil</a>
                     </li>
                     <li class="nav-item mx-3">
-                        <a class="nav-link" href="#">Nos Cours</a>
+                        <a class="nav-link" href="noscours.php">Nos Cours</a>
                     </li>
                     <li class="nav-item mx-3">
-                        <a class="nav-link" href="devis.php">Tarifs</a>
+                        <a class="nav-link" href="devis.php">Devis</a>
                     </li>
                     <li class="nav-item mx-3">
                         <a class="nav-link" href="#">Contacts</a>

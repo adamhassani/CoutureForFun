@@ -30,7 +30,7 @@
                                     <img class="mb-3" src="img/Group 1.png" />
                                     <h1 class="mb-0">Devis gratuit</h1>
                                     <p class="mb-4 text-muted">Obtenez un devis gratuit par mail avec une estimation du prix.</p>
-                                    
+
                                     <form method="post">
 
                                         <div class="form-outline mb-3">
@@ -78,7 +78,16 @@
                                             <button type="submit" class="btn btn-blue btn-block w-100 rounded-pill" name="envoyer-devis">Envoyer</button>
                                         </div>
 
-                                        <div class="form-outline mb-3 border"></div>
+                                        <div class="form-outline border p-0 m-0">
+                                            <div class="row d-flex align-items-center">
+                                                <div class="col-auto">
+                                                    <img class="" src="img/devis_tel.png" />
+                                                </div>
+                                                <div class="col d-flex align-items-center">
+                                                    <p class="">01 23 45 67 89</p>
+                                                </div>
+                                            </div>
+                                        </div>
 
                                     </form>
 
@@ -90,6 +99,7 @@
             </div>
         </div>
     </section>
+    <?php include 'footer.php'; ?>
 </body>
 
 </html>
