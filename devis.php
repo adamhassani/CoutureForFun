@@ -35,12 +35,12 @@
 
                                         <div class="form-outline mb-3">
                                             <label class="form-label" for="devisMail"><strong>Address email</strong></label>
-                                            <input type="text" id="devisMail" placeholder="Entrez votre adresse email." class="form-control form-control-lg rounded-pill" name="mail" />
+                                            <input type="text" id="devisMail" placeholder="Entrez votre adresse email." class="form-control form-control-lg rounded-4" name="mail" />
                                         </div>
 
                                         <div class="form-outline mb-3">
                                             <label class="form-label" for="devisType"><strong>Type de vêtement</strong></label>
-                                            <select class="form-select rounded-pill" aria-label="">
+                                            <select class="form-select rounded-4" aria-label="">
                                                 <option value="" disabled selected hidden>Please Choose...</option>
                                                 <option value="1">One</option>
                                                 <option value="2">Two</option>
@@ -50,7 +50,7 @@
 
                                         <div class="form-outline mb-3">
                                             <label class="form-label" for="devisTissu"><strong>Tissu</strong></label>
-                                            <select class="form-select rounded-pill" aria-label="">
+                                            <select class="form-select rounded-4" aria-label="">
                                                 <option value="" disabled selected hidden>Please Choose...</option>
                                                 <option value="1">One</option>
                                                 <option value="2">Two</option>
@@ -60,7 +60,7 @@
 
                                         <div class="form-outline mb-3">
                                             <label class="form-label" for="devisTaille"><strong>Taille</strong></label>
-                                            <select class="form-select rounded-pill" aria-label="">
+                                            <select class="form-select rounded-4" aria-label="">
                                                 <option value="" disabled selected hidden>Please Choose...</option>
                                                 <option value="1">One</option>
                                                 <option value="2">Two</option>
@@ -74,9 +74,11 @@
                                         </div>
 
 
-                                        <div class="d-flex justify-content-end pt-3 mb-0">
+                                        <div class="d-flex justify-content-end pt-3 mb-3">
                                             <button type="submit" class="btn btn-blue btn-block w-100 rounded-pill" name="envoyer-devis">Envoyer</button>
                                         </div>
+
+                                        <div class="form-outline mb-3 border"></div>
 
                                     </form>
 
