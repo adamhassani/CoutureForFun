@@ -31,7 +31,7 @@
                     <div class="d-flex justify-content-end pt-3 mb-3">
                         <?php
                         if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] == true){
-                            echo '<a href = ""><button type="submit" class="btn btn-blue btn-block w-100 rounded-pill" name="envoyer-devis">Souscrire à cette offre</button></a>';
+                            echo '<a href = "selectionnerCours.php"><button type="submit" class="btn btn-blue btn-block w-100 rounded-pill" name="envoyer-devis">Souscrire à cette offre</button></a>';
                         }else {
                             echo '<a href = "inscription.php"><button type="submit" class="btn btn-blue btn-block w-100 rounded-pill" name="envoyer-devis">connecter a ou creer un compte pour souscrire à un offre</button></a>';
                         }
@@ -49,7 +49,7 @@
                     <div class="d-flex justify-content-end pt-3 mb-3">
                         <?php
                         if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] == true){
-                            echo '<a href = ""><button type="submit" class="btn btn-blue btn-block w-100 rounded-pill" name="envoyer-devis">Souscrire à cette offre</button></a>';
+                            echo '<a href = "selectionnerCours.php"><button type="submit" class="btn btn-blue btn-block w-100 rounded-pill" name="envoyer-devis">Souscrire à cette offre</button></a>';
                         }else {
                                 echo '<a href = "inscription.php"><button type="submit" class="btn btn-blue btn-block w-100 rounded-pill" name="envoyer-devis">connecter a ou creer un compte pour souscrire à un offre</button></a>';
                         }
@@ -67,7 +67,7 @@
                     <div class="d-flex justify-content-end pt-3 mb-3">
                         <?php
                         if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] == true){
-                            echo '<a href = ""><button type="submit" class="btn btn-blue btn-block w-100 rounded-pill" name="envoyer-devis">Souscrire à cette offre</button></a>';
+                            echo '<a href = "selectionnerCours.php"><button type="submit" class="btn btn-blue btn-block w-100 rounded-pill" name="envoyer-devis">Souscrire à cette offre</button></a>';
                         }else {
                                 echo '<a href = "inscription.php"><button type="submit" class="btn btn-blue btn-block w-100 rounded-pill" name="envoyer-devis">connecter a ou creer un compte pour souscrire à un offre</button></a>';
                         }
