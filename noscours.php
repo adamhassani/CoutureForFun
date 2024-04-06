@@ -35,7 +35,7 @@
                         <li class="text-muted"><img src="img/checklist.png" class="img-fluid me-2" alt="Image 1"> Utilisation de la machine à coudre</li>
                         <li class="text-muted"><img src="img/checklist.png" class="img-fluid me-2" alt="Image 2"> Réalisation d'ourlets</li>
                         <li class="text-muted"><img src="img/checklist.png" class="img-fluid me-2" alt="Image 3"> Pose de fermeture éclaire</li>
-                        <li class="text-muted"><img src="img/checklist.png" class="img-fluid me-2" alt="Image 3"> Dispensé par <strong>Michelle< Legrand</strong></li>
+                        <li class="text-muted"><img src="img/checklist.png" class="img-fluid me-2" alt="Image 3"> Dispensé par <strong>Michelle Legrand</strong></li>
                     </ul>
                     <div class="d-grip gap-2">
                         <?php
