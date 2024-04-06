@@ -13,7 +13,7 @@
 
 <body>
     <?php include 'navbar.php'; ?>
-    <div class="container-fluid bg-primary pt-5 px-5">
+    <div class="container-fluid bg-primary px-sm-0 pt-xl-5">
         <div class="row ">
             <h6 class="d-flex justify-content-center align-items-center mt-5 mb-2">SERVICES</h6>
         </div>
@@ -28,14 +28,14 @@
                     <h3 class="d-flex">Couture pour débutants</h3>
                     <p>Découvrez la couture avec notre formation pour débutants. Nos experts vous guideront pas à pas pour maîtriser les bases, de la lecture de patrons aux techniques essentielles. Devenez fier(e) de vos premières créations !</p>
                     <hr>
-                    <p>Ce cours est structuré sur <strong>4 semaines</strong>, avec des cours en lignes d'<strong>une heure par semaine.</strong></p>
+                    <p class="text-muted">Ce cours est structuré sur <strong>4 semaines</strong>, avec des cours en lignes d'<strong>une heure par semaine.</strong></p>
                     </p>
                     <hr>
                     <ul class="list-unstyled">
                         <li class="text-muted"><img src="img/checklist.png" class="img-fluid me-2" alt="Image 1"> Utilisation de la machine à coudre</li>
                         <li class="text-muted"><img src="img/checklist.png" class="img-fluid me-2" alt="Image 2"> Réalisation d'ourlets</li>
                         <li class="text-muted"><img src="img/checklist.png" class="img-fluid me-2" alt="Image 3"> Pose de fermeture éclaire</li>
-                        <li class="text-muted"><img src="img/checklist.png" class="img-fluid me-2" alt="Image 3"> Pose de fermeture éclaire</li>
+                        <li class="text-muted"><img src="img/checklist.png" class="img-fluid me-2" alt="Image 3"> Dispensé par <strong>Michelle< Legrand</strong></li>
                     </ul>
                     <div class="d-grip gap-2">
                         <?php
@@ -55,8 +55,14 @@
                     <h3 class="d-flex">Couture avec patrons</h3>
                     <p>Vous avez des bases en couture ? Apprenez à maîtriser l'utilisation des patrons pour réaliser des vêtements sur-mesure. Nos formateurs vous enseigneront les techniques d'ajustement et de transformation des modèles.<br/> 
                     <hr>
-                    <p>Ce cours est structuré sur <strong>4 semaines</strong>, avec des cours en lignes d'<strong>une heure par semaine.</strong></p>
+                    <p class="text-muted">Ce cours est structuré sur <strong>6 semaines</strong>, avec des cours en lignes d'<strong>une heure par semaine.</strong></p>
                     <hr>
+                    <ul class="list-unstyled">
+                        <li class="text-muted"><img src="img/checklist.png" class="img-fluid me-2" alt="Image 1"> Patrons pour pantallon</li>
+                        <li class="text-muted"><img src="img/checklist.png" class="img-fluid me-2" alt="Image 2"> Patrons pour jupes</li>
+                        <li class="text-muted"><img src="img/checklist.png" class="img-fluid me-2" alt="Image 3"> Patrons pour pull</li>
+                        <li class="text-muted"><img src="img/checklist.png" class="img-fluid me-2" alt="Image 3"> Dispensé par <strong>Lucas Chardon</strong></li>
+                    </ul>
                     <div class="d-grip gap-2">
                         <?php
                         if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] == true) {
@@ -75,8 +81,13 @@
                     <h3 class="d-flex">Couture avancée</h3>
                     <p>Vous êtes couturier(ère) confirmé(e) ? Repoussez vos limites avec notre formation avancée. Découvrez des techniques de pointe comme la couture de tissus délicats ou la création de vos propres patrons. Devenez un(e) créateur(trice) unique.</p>
                     <hr>
-                    <p>Ce cours est structuré sur <strong>4 semaines</strong>, avec des cours en lignes d'<strong>une heure par semaine.</strong></p>
+                    <p class="text-muted">Ce cours est structuré sur <strong>10 semaines</strong>, avec des cours en lignes d'<strong>une heure par semaine.</strong></p>
                     <hr>
+                    <ul class="list-unstyled">
+                        <li class="text-muted"><img src="img/checklist.png" class="img-fluid me-2" alt="Image 1"> Apprendre à creer des patrons</li>
+                        <li class="text-muted"><img src="img/checklist.png" class="img-fluid me-2" alt="Image 2"> Coudre des modèles plus avancés</li>
+                        <li class="text-muted"><img src="img/checklist.png" class="img-fluid me-2" alt="Image 3"> Dispensé par <strong>Marion Mai</strong></li>
+                    </ul>
                     <div class="d-grip gap-2">
                         <?php
                         if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] == true) {
