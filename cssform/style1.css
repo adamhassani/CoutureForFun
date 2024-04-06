@@ -284,3 +284,7 @@ a.text-blue:hover, a.text-blue:focus {
 textarea {
   resize: none;
 }
+
+body{
+  font-family: 'Inter', sans-serif;
+}

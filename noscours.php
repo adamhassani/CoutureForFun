@@ -28,12 +28,21 @@
                     <h3 class="d-flex">Couture pour débutants</h3>
                     <p>Découvrez la couture avec notre formation pour débutants. Nos experts vous guideront pas à pas pour maîtriser les bases, de la lecture de patrons aux techniques essentielles. Devenez fier(e) de vos premières créations !</p>
                     <hr>
-                    <div class="d-flex justify-content-end pt-3 mb-3">
+                    <p>Ce cours est structuré sur <strong>4 semaines</strong>, avec des cours en lignes d'<strong>une heure par semaine.</strong></p>
+                    </p>
+                    <hr>
+                    <ul class="list-unstyled">
+                        <li class="text-muted"><img src="img/checklist.png" class="img-fluid me-2" alt="Image 1"> Utilisation de la machine à coudre</li>
+                        <li class="text-muted"><img src="img/checklist.png" class="img-fluid me-2" alt="Image 2"> Réalisation d'ourlets</li>
+                        <li class="text-muted"><img src="img/checklist.png" class="img-fluid me-2" alt="Image 3"> Pose de fermeture éclaire</li>
+                        <li class="text-muted"><img src="img/checklist.png" class="img-fluid me-2" alt="Image 3"> Pose de fermeture éclaire</li>
+                    </ul>
+                    <div class="d-grip gap-2">
                         <?php
-                        if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] == true){
-                            echo '<a href = "selectionnerCours.php"><button type="submit" class="btn btn-blue btn-block w-100 rounded-pill" name="envoyer-devis">Souscrire à cette offre</button></a>';
-                        }else {
-                            echo '<a href = "inscription.php"><button type="submit" class="btn btn-blue btn-block w-100 rounded-pill" name="envoyer-devis">connecter a ou creer un compte pour souscrire à un offre</button></a>';
+                        if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] == true) {
+                            echo '<a href = "selectionnerCours.php"><button type="submit" class="btn btn-blue btn-block w-100 rounded-pill">Souscrire à cette offre</button></a>';
+                        } else {
+                            echo '<a href = "connection.php"><button type="submit" class="btn btn-blue btn-block w-100 rounded-pill">Se connecter</button></a>';
                         }
                         ?>
                     </div>
@@ -44,16 +53,18 @@
                 <div class="card-body shadow p-4 m-5 bg-body rounded">
                     <img class="mb-3" src="img/coutPatrons.png" />
                     <h3 class="d-flex">Couture avec patrons</h3>
-                    <p>Vous avez des bases en couture ? Apprenez à maîtriser l'utilisation des patrons pour réaliser des vêtements sur-mesure. Nos formateurs vous enseigneront les techniques d'ajustement et de transformation des modèles.</p>
+                    <p>Vous avez des bases en couture ? Apprenez à maîtriser l'utilisation des patrons pour réaliser des vêtements sur-mesure. Nos formateurs vous enseigneront les techniques d'ajustement et de transformation des modèles.<br/> 
                     <hr>
-                    <div class="d-flex justify-content-end pt-3 mb-3">
+                    <p>Ce cours est structuré sur <strong>4 semaines</strong>, avec des cours en lignes d'<strong>une heure par semaine.</strong></p>
+                    <hr>
+                    <div class="d-grip gap-2">
                         <?php
-                        if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] == true){
-                            echo '<a href = "selectionnerCours.php"><button type="submit" class="btn btn-blue btn-block w-100 rounded-pill" name="envoyer-devis">Souscrire à cette offre</button></a>';
-                        }else {
-                                echo '<a href = "inscription.php"><button type="submit" class="btn btn-blue btn-block w-100 rounded-pill" name="envoyer-devis">connecter a ou creer un compte pour souscrire à un offre</button></a>';
+                        if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] == true) {
+                            echo '<a href = "selectionnerCours.php"><button type="submit" class="btn btn-blue btn-block w-100 rounded-pill">Souscrire à cette offre</button></a>';
+                        } else {
+                            echo '<a href = "connection.php"><button type="submit" class="btn btn-blue btn-block w-100 rounded-pill">Se connecter</button></a>';
                         }
-                        ?>                    
+                        ?>
                     </div>
                 </div>
             </div>
@@ -64,14 +75,16 @@
                     <h3 class="d-flex">Couture avancée</h3>
                     <p>Vous êtes couturier(ère) confirmé(e) ? Repoussez vos limites avec notre formation avancée. Découvrez des techniques de pointe comme la couture de tissus délicats ou la création de vos propres patrons. Devenez un(e) créateur(trice) unique.</p>
                     <hr>
-                    <div class="d-flex justify-content-end pt-3 mb-3">
+                    <p>Ce cours est structuré sur <strong>4 semaines</strong>, avec des cours en lignes d'<strong>une heure par semaine.</strong></p>
+                    <hr>
+                    <div class="d-grip gap-2">
                         <?php
-                        if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] == true){
-                            echo '<a href = "selectionnerCours.php"><button type="submit" class="btn btn-blue btn-block w-100 rounded-pill" name="envoyer-devis">Souscrire à cette offre</button></a>';
-                        }else {
-                                echo '<a href = "inscription.php"><button type="submit" class="btn btn-blue btn-block w-100 rounded-pill" name="envoyer-devis">connecter a ou creer un compte pour souscrire à un offre</button></a>';
+                        if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] == true) {
+                            echo '<a href = "selectionnerCours.php"><button type="submit" class="btn btn-blue btn-block w-100 rounded-pill">Souscrire à cette offre</button></a>';
+                        } else {
+                            echo '<a href = "connection.php"><button type="submit" class="btn btn-blue btn-block w-100 rounded-pill">Se connecter</button></a>';
                         }
-                        ?>          
+                        ?>
                     </div>
                 </div>
             </div>

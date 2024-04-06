@@ -41,8 +41,7 @@
                                         <div class="form-outline mb-3">
                                             <label class="form-label" for="devisType"><strong>Type de vêtement</strong></label>
                                             <select class="form-select rounded-4" aria-label="" id = "typevet">
-                                                <option value="" disabled selected hidden>Choisissez votre type de vêtements</option>
-                                                <option value="Pantalon">Pantalon</option>
+                                                <option value="Pantalon"selected>Pantalon</option>
                                                 <option value="Pull">Pull</option>
                                                 <option value="Veste">Veste</option>
                                             </select>
@@ -51,8 +50,7 @@
                                         <div class="form-outline mb-3">
                                             <label class="form-label" for="devisTissu"><strong>Tissu</strong></label>
                                             <select class="form-select rounded-4" aria-label="" id = "tissuvet">
-                                                <option value="" disabled selected hidden>Choisissez votre tissu</option>
-                                                <option value="Coton">Coton</option>
+                                                <option value="Coton"selected>Coton</option>
                                                 <option value="Lin">Lin</option>
                                                 <option value="Soie">Soie</option>
                                             </select>
@@ -61,8 +59,7 @@
                                         <div class="form-outline mb-3">
                                             <label class="form-label" for="devisTaille"><strong>Taille</strong></label>
                                             <select class="form-select rounded-4" aria-label="" id = "taillevet">
-                                                <option value="" disabled selected hidden>Choisissez votre taille</option>
-                                                <option value="1">XS</option>
+                                                <option value="1"selected>XS</option>
                                                 <option value="2">S</option>
                                                 <option value="3">M</option>
                                                 <option value="L">L</option>
