@@ -7,6 +7,7 @@
     <title>Effectuer un devis.</title>
     <link href="bootstrap.css" rel="stylesheet">
     <link href="cssform/style1.css" rel="stylesheet">
+    <link href = "errStyle.css" rel = "stylesheet">
     <link rel="icon" type="image/x-icon" sizes="64x64" href="img/logo1.png">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
@@ -31,7 +32,7 @@
                                     <h1 class="mb-0">Devis gratuit</h1>
                                     <p class="mb-4 text-muted">Obtenez un devis gratuit par mail avec une estimation du prix.</p>
 
-                                    <form method="post">
+                                    <form method="post" onsubmit = "return sendChecked();">
 
                                         <div class="form-outline mb-3">
                                             <label class="form-label" for="devisMail"><strong>Address email</strong></label>
@@ -42,7 +43,7 @@
                                             <label class="form-label" for="devisType"><strong>Type de vêtement</strong></label>
                                             <select class="form-select rounded-4" aria-label="" id = "typevet">
                                                 <option value="" disabled selected hidden>Choisissez votre type de vêtements</option>
-                                                <option value="Pantalon">Pantalon</option>
+                                                <option value="Pantalon" selected>Pantalon</option>
                                                 <option value="Pull">Pull</option>
                                                 <option value="Veste">Veste</option>
                                             </select>
@@ -51,8 +52,8 @@
                                         <div class="form-outline mb-3">
                                             <label class="form-label" for="devisTissu"><strong>Tissu</strong></label>
                                             <select class="form-select rounded-4" aria-label="" id = "tissuvet">
-                                                <option value="" disabled selected hidden>Choisissez votre tissu</option>
-                                                <option value="Coton">Coton</option>
+                                                <option value="" disabled  hidden>Choisissez votre tissu</option>
+                                                <option value="Coton" selected>Coton</option>
                                                 <option value="Lin">Lin</option>
                                                 <option value="Soie">Soie</option>
                                             </select>
@@ -61,8 +62,8 @@
                                         <div class="form-outline mb-3">
                                             <label class="form-label" for="devisTaille"><strong>Taille</strong></label>
                                             <select class="form-select rounded-4" aria-label="" id = "taillevet">
-                                                <option value="" disabled selected hidden>Choisissez votre taille</option>
-                                                <option value="1">XS</option>
+                                                <option value="" disabled  hidden>Choisissez votre taille</option>
+                                                <option value="1" selected>XS</option>
                                                 <option value="2">S</option>
                                                 <option value="3">M</option>
                                                 <option value="L">L</option>
@@ -81,19 +82,22 @@
                                             <label class="form-label" for="devisServices"><strong>Choisir un sérvice</strong></label><br>
 
                                             <!-- Option 1 -->
-                                            <input type="radio" class="btn-check" name="btnOptions" id="btnOurlets" autocomplete="off">
+                                            <input type="radio" class="btn-check" value = "btnOurlets" name="btnOptions" id="btnOurlets" autocomplete="off">
                                             <label class="btn btn-outline-primary" for="btnOurlets">Ourlets</label>
 
                                             <!-- Option 2 -->
-                                            <input type="radio" class="btn-check" name="btnOptions" id="btnRetouches" autocomplete="off">
+                                            <input type="radio" class="btn-check" value = "btnRetouches"name="btnOptions" id="btnRetouches" autocomplete="off">
                                             <label class="btn btn-outline-primary" for="btnRetouches">Retouches</label>
 
                                             <!-- Option 3 -->
-                                            <input type="radio" class="btn-check" name="btnOptions" id="btnDeux" autocomplete="off">
+                                            <input type="radio" class="btn-check" value = "btnDeux" name="btnOptions" id="btnDeux" autocomplete="off">
                                             <label class="btn btn-outline-primary" for="btnDeux">Ourlets + Retouches</label>
                                         </div>
 
                                         <div class="d-flex justify-content-end pt-3 mb-0">
+                                            <button onclick="devisValidation()" class="btn btn-blue btn-block w-25 rounded-pill" name="envoyer-devis">Confirmer</button><br>
+                                            <span id = "error-confirmation" class = "error-message"></span><br>
+                                            <p id = "recap" name = "recapDevis"></p>
                                             <button type="submit" class="btn btn-blue btn-block w-100 rounded-pill" name="envoyer-devis">Envoyer</button>
                                         </div>
 
@@ -108,6 +112,7 @@
         </div>
     </section>
     <?php include 'footer.php'; ?>
+    <script src = "eventHandlerDevis.js"></script>
 </body>
 
 </html>
