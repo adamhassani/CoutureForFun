@@ -40,7 +40,7 @@
 
                                         <div class="form-outline mb-3">
                                             <label class="form-label" for="devisType"><strong>Type de vêtement</strong></label>
-                                            <select class="form-select rounded-4" aria-label="">
+                                            <select class="form-select rounded-4" aria-label="" id = "typevet">
                                                 <option value="" disabled selected hidden>Choisissez votre type de vêtements</option>
                                                 <option value="Pantalon">Pantalon</option>
                                                 <option value="Pull">Pull</option>
@@ -50,7 +50,7 @@
 
                                         <div class="form-outline mb-3">
                                             <label class="form-label" for="devisTissu"><strong>Tissu</strong></label>
-                                            <select class="form-select rounded-4" aria-label="">
+                                            <select class="form-select rounded-4" aria-label="" id = "tissuvet">
                                                 <option value="" disabled selected hidden>Choisissez votre tissu</option>
                                                 <option value="Coton">Coton</option>
                                                 <option value="Lin">Lin</option>
@@ -60,7 +60,7 @@
 
                                         <div class="form-outline mb-3">
                                             <label class="form-label" for="devisTaille"><strong>Taille</strong></label>
-                                            <select class="form-select rounded-4" aria-label="">
+                                            <select class="form-select rounded-4" aria-label="" id = "taillevet">
                                                 <option value="" disabled selected hidden>Choisissez votre taille</option>
                                                 <option value="1">XS</option>
                                                 <option value="2">S</option>
@@ -78,17 +78,18 @@
                                         </div>
 
                                         <div class="form-outline mb-3 px-0">
+                                            <label class="form-label" for="devisServices"><strong>Choisir un sérvice</strong></label><br>
 
-                                            <label class="form-label" for="devisServices"><strong>Choisir un sérvice</strong></label></br>
-                                            <input type="radio" class="btn-check" name="btnOurlets">
+                                            <!-- Option 1 -->
+                                            <input type="radio" class="btn-check" name="btnOptions" id="btnOurlets" autocomplete="off">
                                             <label class="btn btn-outline-primary" for="btnOurlets">Ourlets</label>
 
                                             <!-- Option 2 -->
-                                            <input type="radio" class="btn-check" name="btnRetouches">
+                                            <input type="radio" class="btn-check" name="btnOptions" id="btnRetouches" autocomplete="off">
                                             <label class="btn btn-outline-primary" for="btnRetouches">Retouches</label>
 
                                             <!-- Option 3 -->
-                                            <input type="radio" class="btn-check" name="btnDeux">
+                                            <input type="radio" class="btn-check" name="btnOptions" id="btnDeux" autocomplete="off">
                                             <label class="btn btn-outline-primary" for="btnDeux">Ourlets + Retouches</label>
                                         </div>
 
