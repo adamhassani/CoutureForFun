@@ -65,7 +65,7 @@
                         if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] == true){
                         echo '<button type="submit" class="btn btn-blue btn-block w-100 rounded-pill" name="envoyer-devis">Souscrire à cette offre</button>';
                         }
-                        ?>                    
+                        ?>          
                     </div>
                 </div>
             </div>
