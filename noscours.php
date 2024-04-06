@@ -71,7 +71,7 @@
                         }else {
                                 echo '<a href = "inscription.php"><button type="submit" class="btn btn-blue btn-block w-100 rounded-pill" name="envoyer-devis">connecter a ou creer un compte pour souscrire à un offre</button></a>';
                         }
-                        ?>                    
+                        ?>          
                     </div>
                 </div>
             </div>

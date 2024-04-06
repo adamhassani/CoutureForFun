@@ -26,7 +26,7 @@
                             </div>
 
                             <div class="col-xl-6 d-flex align-items-center py-0 my-0">
-                                <div class="card-body p-md-5 text-black">
+                                <div class="card-body p-md-3 p-xl-5 text-black">
                                     <img class="mb-3" src="img/Group 1.png" />
                                     <h1 class="mb-0">Devis gratuit</h1>
                                     <p class="mb-4 text-muted">Obtenez un devis gratuit par mail avec une estimation du prix.</p>
@@ -41,30 +41,34 @@
                                         <div class="form-outline mb-3">
                                             <label class="form-label" for="devisType"><strong>Type de vêtement</strong></label>
                                             <select class="form-select rounded-4" aria-label="">
-                                                <option value="" disabled selected hidden>Please Choose...</option>
-                                                <option value="1">One</option>
-                                                <option value="2">Two</option>
-                                                <option value="3">Three</option>
+                                                <option value="" disabled selected hidden>Choisissez votre type de vêtements</option>
+                                                <option value="Pantalon">Pantalon</option>
+                                                <option value="Pull">Pull</option>
+                                                <option value="Veste">Veste</option>
                                             </select>
                                         </div>
 
                                         <div class="form-outline mb-3">
                                             <label class="form-label" for="devisTissu"><strong>Tissu</strong></label>
                                             <select class="form-select rounded-4" aria-label="">
-                                                <option value="" disabled selected hidden>Please Choose...</option>
-                                                <option value="1">One</option>
-                                                <option value="2">Two</option>
-                                                <option value="3">Three</option>
+                                                <option value="" disabled selected hidden>Choisissez votre tissu</option>
+                                                <option value="Coton">Coton</option>
+                                                <option value="Lin">Lin</option>
+                                                <option value="Soie">Soie</option>
                                             </select>
                                         </div>
 
                                         <div class="form-outline mb-3">
                                             <label class="form-label" for="devisTaille"><strong>Taille</strong></label>
                                             <select class="form-select rounded-4" aria-label="">
-                                                <option value="" disabled selected hidden>Please Choose...</option>
-                                                <option value="1">One</option>
-                                                <option value="2">Two</option>
-                                                <option value="3">Three</option>
+                                                <option value="" disabled selected hidden>Choisissez votre taille</option>
+                                                <option value="1">XS</option>
+                                                <option value="2">S</option>
+                                                <option value="3">M</option>
+                                                <option value="L">L</option>
+                                                <option value="XL">XL</option>
+                                                <option value="2XL">2XL</option>
+                                                <option value="3XL">3XL</option>
                                             </select>
                                         </div>
 
@@ -73,20 +77,23 @@
                                             <textarea type="text" id="devisDescription" placeholder="Decrivez votre demande" class="form-control form-control-lg rounded-4" name="description" rows="1"></textarea>
                                         </div>
 
+                                        <div class="form-outline mb-3 px-0">
 
-                                        <div class="d-flex justify-content-end pt-3 mb-3">
-                                            <button type="submit" class="btn btn-blue btn-block w-100 rounded-pill" name="envoyer-devis">Envoyer</button>
+                                            <label class="form-label" for="devisServices"><strong>Choisir un sérvice</strong></label></br>
+                                            <input type="radio" class="btn-check" name="btnOurlets">
+                                            <label class="btn btn-outline-primary" for="btnOurlets">Ourlets</label>
+
+                                            <!-- Option 2 -->
+                                            <input type="radio" class="btn-check" name="btnRetouches">
+                                            <label class="btn btn-outline-primary" for="btnRetouches">Retouches</label>
+
+                                            <!-- Option 3 -->
+                                            <input type="radio" class="btn-check" name="btnDeux">
+                                            <label class="btn btn-outline-primary" for="btnDeux">Ourlets + Retouches</label>
                                         </div>
 
-                                        <div class="form-outline border p-0 m-0">
-                                            <div class="row d-flex align-items-center">
-                                                <div class="col-auto">
-                                                    <img class="" src="img/devis_tel.png" />
-                                                </div>
-                                                <div class="col d-flex align-items-center">
-                                                    <p class="">01 23 45 67 89</p>
-                                                </div>
-                                            </div>
+                                        <div class="d-flex justify-content-end pt-3 mb-0">
+                                            <button type="submit" class="btn btn-blue btn-block w-100 rounded-pill" name="envoyer-devis">Envoyer</button>
                                         </div>
 
                                     </form>
