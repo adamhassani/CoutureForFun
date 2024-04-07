@@ -5,16 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>S'enregistrer.</title>
-    <link href="bootstrap.css" rel="stylesheet">
-    <link href="cssform/style1.css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" sizes="64x64" href="img/logo1.png">
+    <link href="../bootstrap.css" rel="stylesheet">
+    <link href="../cssform/style1.css" rel="stylesheet">
+    <link href="../errStyle.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" sizes="64x64" href="../img/logo1.png">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
-    <link href="errStyle.css" rel="stylesheet">
 </head>
 
 <body class="bg-primary">
-    <?php include 'navbar.php'; ?>
+    <?php include '../navigation/navbar.php'; ?>
 
 
     <section>
@@ -27,7 +27,7 @@
 
                             <div class="col-xl-6 d-flex align-items-center">
                                 <div class="card-body p-md-5 text-black">
-                                    <img class="mb-3" src="img/Group 1.png" />
+                                    <img class="mb-3" src="../img/Group 1.png" />
                                     <h1 class="mb-0">S'inscrire</h1>
                                     <p class="mb-5 text-muted">Rejoignez une communauté de +3000 couturiers.</p>
                                     <form method="post" onsubmit = "return validateForm();">
@@ -74,13 +74,13 @@
 
                                         <div class="d-flex justify-content-center">
                                             <p class="me-1">Vous avez déjà un compte?</p>
-                                            <a class="text-primary" href="connection.php">Se connecter</a>
+                                            <a class="text-primary" href="../connection/connection.php">Se connecter</a>
                                         </div>
                                     </form>
                                 </div>
                             </div>
                             <div class="col-xl-6 d-none d-xl-block">
-                                <img src="img/Inscription.png" alt="Inscription" class="img-fluid float-end" style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
+                                <img src="../img/Inscription.png" alt="Inscription" class="img-fluid float-end" style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
                             </div>
                         </div>
                     </div>
@@ -93,7 +93,7 @@
 
 
 
-    <?php include 'footer.php'; ?>
+    <?php include '../navigation/footer.php'; ?>
     <script src = "eventHandlerInscription.js" ></script>
     <?php include 'inscriptionProcedure.php';?>
 </body>

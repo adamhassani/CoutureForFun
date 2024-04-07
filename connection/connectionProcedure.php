@@ -65,7 +65,7 @@ if (isset($_POST['connection'])) {
                 $_SESSION['user_mail'] = $userConn['mail'];
                 $_SESSION['user_nom'] = $userConn['nom'];
                 $_SESSION['user_prenom'] = $userConn['prenom'];
-                echo '<script>window.location.href = "accueil.php"</script>'; // redirect to the initial page
+                echo '<script>window.location.href = "../accueil/accueil.php"</script>'; // redirect to the initial page
             } else {
                 echo '<script>passConnErrorMsg();</script>'; // add pass error message
                 

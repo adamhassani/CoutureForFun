@@ -13,7 +13,7 @@ if (isset($_POST['contactContact'])) {
     $mailSent = mail($mailDest, $subject, $message, $headers);
     
     
-    echo '<script>window.location.href="requestSent.php";</script>'; // suppossing that the mail sending protocol and  config file are correct and smtp server is running 
+    echo '<script>window.location.href="../cours/requestSent.php";</script>'; // suppossing that the mail sending protocol and  config file are correct and smtp server is running 
     
 
 }
