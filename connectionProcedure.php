@@ -1,4 +1,5 @@
 <?php
+session_start();
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -7,7 +8,7 @@ if (isset($_POST['connection'])) {
     
     $mailConn = $_POST['mailConn'];
     $mdpConn = $_POST['mdpConn'];
-    echo '<script>alert("coucou");</script>'; // This will display an alert box on the client's browser
+    
 
     try {
         // Create connection to MySQL server
@@ -29,21 +30,17 @@ if (isset($_POST['connection'])) {
                     `nom` varchar(50) NOT NULL,
                     `prenom` varchar(50) NOT NULL,
                     `mail` varchar(100) NOT NULL,
-                    `motDePasse` varchar(255) NOT NULL
+                    `motDePasse` varchar(255) NOT NULL,
+                    `Cours` varchar(80) NOT NULL
                   ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;";
                 $connConn->exec($sql_statementsConn);
-                echo "SQL statements executed successfully<br>";
-                echo "Database created successfully<br>";
+                
                 $connConn = null; // then end the connection to restart it 
             } catch( Exception $e){
                 echo  "Error".$e->getMessage();
             }
-        } else {
-            //$sql_drop = "DROP DATABASE $dbname";
-            //$conn->exec($sql_drop);
-            
-            echo "Database already exists<br>";
-        }
+        } 
+        $connConn = null;
 
         // Connect to the specified database
         $connConn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
@@ -63,13 +60,11 @@ if (isset($_POST['connection'])) {
             // Ccompare the passwords
             if ($userConn['motDePasse'] == $mdpConn) {
                 echo '<script>passConnCheck();</script>'; // remove the pass error in case it appears
-                echo '<script>alert("Correct password");</script>';
-                $_SESSION['logged_in'] = true; // vsession variable logged_in true
-                $_SESSION['user_nom'] =$userConn['nom'];
-                $_SESSION['user_prenom'] =$userConn['prenom'];
-                $_SESSION['user_mail'] =$userConn['mail'];
-                //$_SESSION['user_cours'] =;
-                $_SESSION['username'] = $userConn['prenom']." ".$userConn['nom']; // get the username 
+                $_SESSION['logged_in'] = true;
+                $_SESSION['username'] = $userConn['prenom']." ".$userConn['nom'];
+                $_SESSION['user_mail'] = $userConn['mail'];
+                $_SESSION['user_nom'] = $userConn['nom'];
+                $_SESSION['user_prenom'] = $userConn['prenom'];
                 echo '<script>window.location.href = "accueil.php"</script>'; // redirect to the initial page
             } else {
                 echo '<script>passConnErrorMsg();</script>'; // add pass error message

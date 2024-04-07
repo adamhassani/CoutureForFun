@@ -11,6 +11,7 @@
     <link href="cssform/style1.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" sizes="64x64" href="img/logo1.png">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
 </head>
 
 <body class="bg-primary">
@@ -30,7 +31,7 @@
                                     <h1 class="mb-0">Bon retour parmi nous</h1>
                                     <p class="mb-5 text-muted">Saisissez vos données d'identification pour accéder à votre compte.</p>
 
-                                    <form method="post">
+                                    <form method="post" onsubmit ="return validateConnection();">
                                         <div class="form-outline mb-4">
                                             <label class="form-label" for="formMail"><strong>Address email</strong></label>
                                             <input type="text" id="formMail" placeholder="Entrez votre adresse email." class="form-control form-control-lg rounded-4" name="mailConn" />
@@ -39,9 +40,12 @@
 
                                         <div class="form-outline mb-4">
                                             <label class="form-label" for="formMDP"><strong>Mot De Passe</strong></label>
-                                            <input type="password" id="formMDP" placeholder="Entrez un mot de passe sécurisé" class="form-control form-control-lg rounded-4" name="mdpConn" />
+                                            <input type="password" id="formMDP" placeholder="Entrez un mot de passe sécurisé" class="form-control form-control-lg rounded-4" name="fmdp" />
                                             <span class="error-message" id="passConnError"></span>
                                         </div>
+                                        
+                                        <!-- stock -->
+                                        <input type="hidden" id ="formmdp" name="mdpConn" />
 
                                         <div class="form-check mb-4">
                                             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">

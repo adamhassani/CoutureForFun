@@ -32,17 +32,18 @@
                                     <h1 class="mb-0">Devis gratuit</h1>
                                     <p class="mb-4 text-muted">Obtenez un devis gratuit par mail avec une estimation du prix.</p>
 
-                                    <form method="post" onsubmit = "return sendChecked();">
+                                    <form method="post" onsubmit = "return sendChecked()" id = "formDevis">
 
                                         <div class="form-outline mb-3">
                                             <label class="form-label" for="devisMail"><strong>Address email</strong></label>
-                                            <input type="text" id="devisMail" placeholder="Entrez votre adresse email." class="form-control form-control-lg rounded-4" name="mail" />
+                                            <input type="text" id="mailDevis" placeholder="Entrez votre adresse email." class="form-control form-control-lg rounded-4" name="mailDevis" />
+                                            <span class = "error-message" id="errormail"></span>
                                         </div>
 
                                         <div class="form-outline mb-3">
                                             <label class="form-label" for="devisType"><strong>Type de vêtement</strong></label>
                                             <select class="form-select rounded-4" aria-label="" id = "typevet">
-                                                <option value="" disabled selected hidden>Choisissez votre type de vêtements</option>
+                                                <option value="" disabled hidden>Choisissez votre type de vêtements</option>
                                                 <option value="Pantalon" selected>Pantalon</option>
                                                 <option value="Pull">Pull</option>
                                                 <option value="Veste">Veste</option>
@@ -52,7 +53,7 @@
                                         <div class="form-outline mb-3">
                                             <label class="form-label" for="devisTissu"><strong>Tissu</strong></label>
                                             <select class="form-select rounded-4" aria-label="" id = "tissuvet">
-                                                <option value="" disabled  hidden>Choisissez votre tissu</option>
+                                                <option value="" disabled  hdden>Choisissez votre tissu</option>
                                                 <option value="Coton" selected>Coton</option>
                                                 <option value="Lin">Lin</option>
                                                 <option value="Soie">Soie</option>
@@ -63,9 +64,9 @@
                                             <label class="form-label" for="devisTaille"><strong>Taille</strong></label>
                                             <select class="form-select rounded-4" aria-label="" id = "taillevet">
                                                 <option value="" disabled  hidden>Choisissez votre taille</option>
-                                                <option value="1" selected>XS</option>
-                                                <option value="2">S</option>
-                                                <option value="3">M</option>
+                                                <option value="XS" selected>XS</option>
+                                                <option value="S">S</option>
+                                                <option value="M">M</option>
                                                 <option value="L">L</option>
                                                 <option value="XL">XL</option>
                                                 <option value="2XL">2XL</option>
@@ -82,22 +83,33 @@
                                             <label class="form-label" for="devisServices"><strong>Choisir un sérvice</strong></label><br>
 
                                             <!-- Option 1 -->
-                                            <input type="radio" class="btn-check" value = "btnOurlets" name="btnOptions" id="btnOurlets" autocomplete="off">
+                                            <input type="radio" class="btn-check" value = "Ourlets" name="btnOptions" id="btnOurlets" autocomplete="off">
                                             <label class="btn btn-outline-primary" for="btnOurlets">Ourlets</label>
 
                                             <!-- Option 2 -->
-                                            <input type="radio" class="btn-check" value = "btnRetouches"name="btnOptions" id="btnRetouches" autocomplete="off">
+                                            <input type="radio" class="btn-check" value = "Retouches"name="btnOptions" id="btnRetouches" autocomplete="off">
                                             <label class="btn btn-outline-primary" for="btnRetouches">Retouches</label>
 
                                             <!-- Option 3 -->
-                                            <input type="radio" class="btn-check" value = "btnDeux" name="btnOptions" id="btnDeux" autocomplete="off">
+                                            <input type="radio" class="btn-check" value = "Ourlets + Retouches" name="btnOptions" id="btnDeux" autocomplete="off">
                                             <label class="btn btn-outline-primary" for="btnDeux">Ourlets + Retouches</label>
+                                            
+                                            <!-- Option 4 --> 
+                                            <input type="radio" class="btn-check" value = "Rien" name="btnOptions" id="rien" autocomplete="off">
+                                            <label class="btn btn-outline-primary" for="rien">Rien</label>
+
                                         </div>
+                                        
+                                        <div class= "form-outline mb-3 px-0">
+                                            <span>Apres votre choix finale confirmer pour envoyer</span>
+                                            <button type = "button" onclick="devisValidation()" class="btn btn-blue btn-block w-25 rounded-pill" name="confirmer">Confirmer</button><br>
+                                            <span id = "errorconfirmation" class = "error-message"></span><br>
+                                            <span id = "recap" value = "" name = "recapDevisIni"></span>
+                                        </div>
+                                        <!-- hidden input to stock the recap to send it to the server-->
+                                        <input type="hidden" name="recapDevis" id="recapId" value="" />
 
                                         <div class="d-flex justify-content-end pt-3 mb-0">
-                                            <button onclick="devisValidation()" class="btn btn-blue btn-block w-25 rounded-pill" name="envoyer-devis">Confirmer</button><br>
-                                            <span id = "error-confirmation" class = "error-message"></span><br>
-                                            <p id = "recap" name = "recapDevis"></p>
                                             <button type="submit" class="btn btn-blue btn-block w-100 rounded-pill" name="envoyer-devis">Envoyer</button>
                                         </div>
 
@@ -113,6 +125,7 @@
     </section>
     <?php include 'footer.php'; ?>
     <script src = "eventHandlerDevis.js"></script>
+    <?php include 'recapDevis.php';?>
 </body>
 
 </html>

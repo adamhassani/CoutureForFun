@@ -4,7 +4,6 @@ if (isset($_POST['contactContact'])) {
     $nom = $_POST['nomContact'];
     $addresse = $_POST['mailContact'];
     $description = $_POST['descriptionContact'];
-
     $subject = "Description pour contact";
     $message = $description;
     $headers = "From: ".$addresse." \r\n";
@@ -13,11 +12,8 @@ if (isset($_POST['contactContact'])) {
     // Send email
     $mailSent = mail($mailDest, $subject, $message, $headers);
     
-    if ($mailSent) {
-        echo "Email sent successfully.";
-    } else {
-        echo "Email sending failed.";
-    }
+    
+    echo '<script>window.location.href="requestSent.php";</script>'; // suppossing that the mail sending protocol and  config file are correct and smtp server is running 
     
 
 }

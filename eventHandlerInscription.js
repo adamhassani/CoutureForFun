@@ -1,3 +1,9 @@
+function sha256Hash(password) {
+    // Hash the password using SHA-256 algorithm
+    const hash = CryptoJS.SHA256(password).toString(CryptoJS.enc.Hex);
+    return hash;
+}
+
 function validateForm() 
 {
     // get the elements from the form
@@ -46,7 +52,9 @@ function validateForm()
         mdpError.innerText = "Le mot de passe doit contenir au moins 8 caractères avec des majuscules, des minuscules et des caractères spéciaux";
         isValid = false;
     }
-
+    if (isValid){
+        document.getElementById("formmdp").value = sha256Hash(mdp); // hashing the password from the client side , because hashing the passwrod in the server is useless the password is delivered to the server in plain text
+    }
     return isValid;
 }
 
@@ -72,3 +80,4 @@ function mailInsError(){
 function mailInsCheck(){
     document.getElementById("mailError").innerText = "";
 }
+

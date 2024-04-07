@@ -21,7 +21,7 @@
                         <img src="img/pointille.png" class="img-fluid mb-5 pe-5 d-none d-xl-block w-100" />
                         <h1 class="mt-5"><strong>Couture & Apprentissage :</br>Fournitures et Cours Experts</strong></h1>
                         <p class="my-5 me-5 text-muted fs-3">Découvrez notre sélection de fournitures et cours experts pour exprimer votre créativité à travers la couture.</p>
-                        <div class="d-grid gap-2 col-5 mx-auto">
+                        <div class="d-grid gap-2 col-xl-6 mx-auto mb-2">
                             <a class="btn btn-secondary btn-lg rounded-pill my-2" href="#">Souscrire à cette offre</a>
                         </div>
                         <img src="img/pointille.png" class="img-fluid mt-5 pe-5 d-none d-xl-block w-100" />
@@ -44,42 +44,35 @@
         </div>
         <div class="row d-flex justify-content-center align-items-center ">
             <div class="col d-flex">
-                <div class="card shadow-lg p-3 mb-5 mt-5 mx-3 bg-body rounded">
-                    <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare felis ac magna malesuada congue. Phasellus rutrum ac lacus ut suscipit. Ut sed convallis nunc.”</p>
+                <div class="card-body shadow-lg p-4 m-5 bg-body rounded">
+                    <p>“J'ai trouvé les cours de couture en ligne sur le site Couture For Fun très utile pour me perfectionner dans ma couture. Les cours sont claires et détaillées, et j'ai pu apprendre beaucoup de nouvelles techniques.”</p>
                     <div class="row">
-                        <div class="col-sm-4">
-                            <img class="avatar ms-0" alt="avatar" src="img/pdp.jpg">
-                        </div>
+
                         <div class="col-sm-8">
-                            <p>John Doe</p>
+                            <p><strong>Charlotte</strong></p>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="col d-flex">
-                <div class="card shadow-lg p-3 mb-5 mt-5 mx-3 bg-body rounded">
-                    <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare felis ac magna malesuada congue. Phasellus rutrum ac lacus ut suscipit. Ut sed convallis nunc.”</p>
+                <div class="card-body shadow-lg p-4 m-5 bg-body rounded">
+                    <p>“J'ai été très satisfait de la formation en ligne de Couture For Fun. Les cours sont structurés et bien organisés, ce qui a permis à ma femme et à moi de travailler ensemble sur nos projets de couture.”</p>
                     <div class="row">
-                        <div class="col-sm-4">
-                            <img class="avatar ms-0" alt="avatar" src="img/pdp.jpg">
-                        </div>
+
                         <div class="col-sm-8">
-                            <p>John Doe</p>
+                            <p><strong>Thomas</strong></p>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="col d-flex">
-                <div class="card shadow-lg p-3 mb-5 mt-5 mx-3 bg-body rounded">
-                    <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare felis ac magna malesuada congue. Phasellus rutrum ac lacus ut suscipit. Ut sed convallis nunc.”</p>
+                <div class="card-body shadow-lg p-4 m-5 bg-body rounded">
+                    <p>“Les cours de Couture For Fun sont parfaits pour les débutants en couture. Ils sont accessibles et détaillés, ce qui a permis à mes amis et à moi de découvrir de nouvelles techniques et de progresser dans notre apprentissage.”</p>
                     <div class="row">
-                        <div class="col-sm-4">
-                            <img class="avatar ms-0" alt="avatar" src="img/pdp.jpg">
-                        </div>
                         <div class="col-sm-8">
-                            <p>John Doe</p>
+                            <p><strong>Amelie</strong></p>
                         </div>
                     </div>
                 </div>
@@ -91,32 +84,45 @@
 
 
     </div>
-    <div class="container-fluid text-center" id="troisiemeContainer">
-        <br><br>
-        <p>SERVICES</p>
-        <h3>Des offres adaptées à vous</h3>
-        <div class="row justify-content-center">
-            <div class="col-lg-3 services">
-                <img class="mx-auto d-block img" src="img/coutureDébutant.png" />
-                <div class="p-3 mb-5 bg-white">
-                    <h3>Couture pour débutants</h3>
-                    <button class="btn btn-primary rounded-pill">En savoir Plus</button>
+    <div class="container-fluid bg-primary pt-xl-5">
+        <div class="row ">
+            <h6 class="d-flex justify-content-center align-items-center mt-5 mb-2">SERVICES</h6>
+        </div>
+        <div class="row">
+            <h2 class="d-flex justify-content-center">Des offres adaptées à vous.</h2>
+        </div>
+        <div class="row d-flex justify-content-center align-items-center ">
+
+            <div class="col d-flex">
+                <div class="card-body shadow-lg px-0 m-5 bg-body rounded">
+                    <img class="card-img-top" src="img/debutantsAccueil.png" />
+                    <h3 class="text-center mx-2 my-3">Couture pour débutants</h3>
+                    <div class="d-grip gap-2 mt-5 mb-3 px-5">
+                        <a href="noscours.php"><button type="submit" class="btn btn-blue btn-block w-100 rounded-pill">En savoir Plus</button></a>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-3">
-                <img class="mx-auto d-block img" src="img/couturePatrons.png" />
-                <div class="p-3 mb-5 bg-white">
-                    <h3>Couture avec patrons</h3>
-                    <button class="btn btn-primary rounded-pill">En savoir Plus</button>
+
+            <div class="col d-flex">
+                <div class="card-body shadow-lg px-0 m-5 bg-body rounded">
+                    <img class="card-img-top" src="img/patronsAccueil.png" />
+                    <h3 class="text-center mx-2 my-3">Couture avec patrons</h3>
+                    <div class="d-grip gap-2 mt-5 mb-3 px-5">
+                        <a href="noscours.php"><button type="submit" class="btn btn-blue btn-block w-100 rounded-pill">En savoir Plus</button></a>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-3">
-                <img class="mx-auto d-block img" src="img/coutureAvancée.png" />
-                <div class="p-3 mb-5 bg-white">
-                    <h3>Couture avancée</h3>
-                    <button class="btn btn-primary rounded-pill">En savoir Plus</button>
+
+            <div class="col d-flex">
+                <div class="card-body shadow-lg px-0 m-5 bg-body rounded">
+                    <img class="card-img-top" src="img/avanceeAccueil.png" />
+                    <h3 class="text-center mx-2 my-3">Couture avancée</h3>
+                    <div class="d-grip gap-2 mt-5 mb-3 px-5">
+                        <a href="noscours.php"><button type="submit" class="btn btn-blue btn-block w-100 rounded-pill">En savoir Plus</button></a>
+                    </div>
                 </div>
             </div>
+
         </div>
     </div>
     <?php include 'footer.php'; ?>

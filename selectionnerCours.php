@@ -32,18 +32,22 @@
                                     <h1 class="mb-0">Inscription Aux Cours</h1>
                                     <p class="mb-4 text-muted">Rejoignez dès aujourd'hui le cours qui vous convient.</p>
 
-                                    <form method="post">
+                                    <form method="post" onsubmit = "return validateSelect();">
 
                                         <div class="form-outline mb-3">
                                             <label class="form-label" for="devisType"><strong>Nos Cours</strong></label>
-                                            <select class="form-select rounded-4" aria-label="">
-                                                <option value="" disabled selected hidden>Sélectionnez un cours</option>
-                                                <option value="debutants">Couture pour débutants</option>
+                                            <select class="form-select rounded-4" aria-label="" id ="coursSelect" name = "cours">
+                                                <option value="" disabled hidden>Sélectionnez un cours</option>
+                                                <option value="debutants" selected>Couture pour débutants</option>
                                                 <option value="patrons">Couture avec patrons</option>
                                                 <option value="avancee">Couture Avancée</option>
                                             </select>
                                         </div>
 
+                                        <!-- to stock -->
+                                        <input type="hidden" value = "" name = "cours" id = "coursId"/>
+                                        <!-- span for error -->
+                                        <span id ="cours-error" class = "error-message"></span>
                                         <div class="d-flex justify-content-end pt-3 mb-0">
                                             <button type="submit" class="btn btn-blue btn-block w-100 rounded-pill" name="envoyer-inscriptioncours">Inscription</button>
                                         </div>
@@ -59,6 +63,8 @@
         </div>
     </section>
     <?php include 'footer.php'; ?>
+    <script src = "eventHandlerCours.js"></script>
+    <?php include 'selectionnerCoursProcedure.php'; ?>
 </body>
 
 

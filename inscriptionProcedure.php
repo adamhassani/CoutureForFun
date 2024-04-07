@@ -10,7 +10,6 @@ if (isset($_POST['inscrire'])) {
     $prenom = $_POST['prenom'];
     $mail = $_POST['mail'];
     $mdp = $_POST['mdp'];
-    echo '<script>alert("coucou")</script>';
 
     try {
         // Create connection to MySQL server
@@ -32,19 +31,16 @@ if (isset($_POST['inscrire'])) {
                     `nom` varchar(50) NOT NULL,
                     `prenom` varchar(50) NOT NULL,
                     `mail` varchar(100) NOT NULL,
-                    `motDePasse` varchar(255) NOT NULL
+                    `motDePasse` varchar(255) NOT NULL,
+                    `Cours` varchar(80) NOT NULL
                   ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;";
                 $conn->exec($sql_statements);
-                echo "SQL statements executed successfully<br>";
-                echo "Database created successfully<br>";
+
                 $conn = null; // then end the connection to restart it 
             } catch( Exception $e){
                 echo  "Error".$e->getMessage();
             }
-        } else {
-            
-            echo "Database already exists<br>";
-            }
+        }
         
         // Connect to the specified database if the data base exists already 
         $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
@@ -57,11 +53,11 @@ if (isset($_POST['inscrire'])) {
 
         if ($row['mail_count'] == 0) {
             // Insert the new record into the Clients table
-            $sql_insert_client = "INSERT INTO Clients(nom, prenom, mail, motDePasse) VALUES (?, ?, ?, ?)";
+            $sql_insert_client = "INSERT INTO Clients(nom, prenom, mail, motDePasse, Cours) VALUES (?, ?, ?, ?, ?)";
             $stmt = $conn->prepare($sql_insert_client); //seperate the the queries data from the logic to prevent any sql injection 
-            $stmt->execute([$nom, $prenom, $mail, $mdp]); // array for place holders instead of binding seperatly
+            $stmt->execute([$nom, $prenom, $mail, $mdp,'None']); // array for place holders instead of binding seperatly
             echo '<script>mailInsCheck();</script>'; 
-            echo '<script>alert("Added the mail")</script>';
+            echo '<script>window.location.href = "accountCreated.php";</script>';
         } else {
             echo '<script>mailInsError();</script>';
         }

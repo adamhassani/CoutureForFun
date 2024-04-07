@@ -9,6 +9,7 @@
     <link href="cssform/style1.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" sizes="64x64" href="img/logo1.png">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
     <link href="errStyle.css" rel="stylesheet">
 </head>
 
@@ -54,9 +55,12 @@
 
                                         <div class="form-outline mb-4">
                                             <label class="form-label" for="formMDP"><strong>Mot De Passe</strong></label>
-                                            <input type="password" id="formMDP" placeholder="Entrez un mot de passe sécurisé" class="form-control form-control-lg rounded-4" name="mdp" />
+                                            <input type="password" id="formMDP" placeholder="Entrez un mot de passe sécurisé" class="form-control form-control-lg rounded-4"  />
                                             <span class = "error-message" id = "mdpError"></span>
                                         </div>
+                                        
+                                        <!--stock -->
+                                        <input type = "hidden" id = "formmdp" name="mdp"/>
 
                                         <div class="form-check mb-4">
                                             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" name = "flexCheckDefault">

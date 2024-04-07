@@ -31,20 +31,20 @@
 
                                     <div class="form-outline mb-3">
                                         <label class="form-label mx-2" for="formNom"><strong>Nom</strong></label>
-                                        <input type="text" id="formNom" placeholder="Entrez votre nom." class="form-control form-control-lg rounded-pill" name="nom" />
+                                        <input type="text" id="formNom" placeholder="Entrez votre nom." class="form-control form-control-lg rounded-pill" name="nomContact" />
                                         <span class="error-message" id="nomError"></span>
                                     </div>
 
-                                    <form method="post" >
+                                    <form method="post" onsubmit = "return validateForm();" >
                                         <div class="form-outline mb-3">
                                             <label class="form-label" for="formMail"><strong>Address email</strong></label>
-                                            <input type="text" id="formMail" placeholder="Entrez votre adresse email." class="form-control form-control-lg rounded-pill" name="mailConn" />
-                                            <span class="error-message" id="mailConnError"></span>
+                                            <input type="text" id="formMail" placeholder="Entrez votre adresse email." class="form-control form-control-lg rounded-pill" name="mailContact" />
+                                            <span class="error-message" id="mailError"></span>
                                         </div>
 
                                         <div class="form-outline mb-3">
-                                            <label class="form-label" for="devisDescription"><strong>Description</strong></label>
-                                            <textarea type="text" id="devisDescription" placeholder="Decrivez votre demande" class="form-control form-control-lg rounded-4" name="description" rows="4"></textarea>
+                                            <label class="form-label" for="formDescription"><strong>Description</strong></label>
+                                            <textarea type="text" id="formDescription" placeholder="Decrivez votre demande" class="form-control form-control-lg rounded-4" name="descriptionContact" rows="4"></textarea>
                                         </div>
 
                                         <div class="d-flex justify-content-end pt-3 mb-1">
@@ -64,6 +64,7 @@
     </section>
     <?php include 'contactProcedure.php'; ?>
     <?php include 'footer.php'; ?>
+    <script src = "eventHandlerContact.js"></script>
 </body>
 
 </html>
