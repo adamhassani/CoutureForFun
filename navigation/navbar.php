@@ -1,7 +1,7 @@
 <header>
     <nav class="navbar navbar-expand-sm navbar-light bg-light">
         <div class="container-fluid">
-        <a class="navbar-brand" href="../accueil.php">
+        <a class="navbar-brand" href="../accueil/accueil.php">
             <img src="../img/logo1.png" alt="logo" style="width:50px; height:auto" class="ms-5"/>
         </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

@@ -15,7 +15,7 @@ if (isset($_POST['envoyer-devis'])) {
     $mailSent = mail($mailDest, $subject, $message, $headers);
     
     
-    echo '<script>window.location.href="requestSent.php";</script>'; // supposing that file config are correct for sending mails , and smtp server is running
+    echo '<script>window.location.href="../cours/requestSent.php";</script>'; // supposing that file config are correct for sending mails , and smtp server is running
     
 
 }
