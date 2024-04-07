@@ -22,7 +22,7 @@
                         <h1 class="mt-5"><strong>Couture & Apprentissage :</br>Fournitures et Cours Experts</strong></h1>
                         <p class="my-5 me-5 text-muted fs-3">Découvrez notre sélection de fournitures et cours experts pour exprimer votre créativité à travers la couture.</p>
                         <div class="d-grid gap-2 col-xl-6 mx-auto mb-2">
-                            <a class="btn btn-secondary btn-lg rounded-pill my-2" href="#">Souscrire à cette offre</a>
+                            <a class="btn btn-secondary btn-lg rounded-pill my-2" href="noscours.php">Souscrire à cette offre</a>
                         </div>
                         <img src="img/pointille.png" class="img-fluid mt-5 pe-5 d-none d-xl-block w-100" />
                     </div>
