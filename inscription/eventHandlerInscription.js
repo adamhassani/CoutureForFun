@@ -49,7 +49,7 @@ function validateForm()
     }
 
     if (mdp === "" || !isValidPassword(mdp)) { // finally the password
-        mdpError.innerText = "Le mot de passe doit contenir au moins 8 caractères avec des majuscules, des minuscules et des caractères spéciaux";
+        mdpError.innerText = "Le mot de passe doit contenir au moins 8 caractères avec des majuscules et des nombres, des minuscules et des caractères spéciaux";
         isValid = false;
     }
     if (isValid){

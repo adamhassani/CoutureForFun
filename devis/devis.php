@@ -76,7 +76,7 @@
 
                                         <div class="form-outline mb-3">
                                             <label class="form-label" for="devisDescription"><strong>Description</strong></label>
-                                            <textarea type="text" id="devisDescription" placeholder="Decrivez votre demande" class="form-control form-control-lg rounded-4" name="description" rows="1"></textarea>
+                                            <textarea type="text" id="devisDescription" placeholder="Decrivez votre demande" class="form-control form-control-lg rounded-4" name="descriptionN" rows="1"></textarea>
                                         </div>
 
                                         <div class="form-outline mb-3 px-0">

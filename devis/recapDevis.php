@@ -3,11 +3,13 @@ $mailDest = "coutureForFun@mail.com";
 if (isset($_POST['envoyer-devis'])) {
   
     $addresse = $_POST['mailDevis'];
+    $description =$_POST['descriptionN'];
     
     $recapDevis = $_POST['recapDevis'];
-
     $subject = "Devis gratuis";
-    $message = $recapDevis;
+
+    $message = $recapDevis."\n Description: ".$description;
+
     $headers = "From: ".$addresse." \r\n";
     $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
     
@@ -15,7 +17,12 @@ if (isset($_POST['envoyer-devis'])) {
     $mailSent = mail($mailDest, $subject, $message, $headers);
     
     
-    echo '<script>window.location.href="../cours/requestSent.php";</script>'; // supposing that file config are correct for sending mails , and smtp server is running
+    if ($mailSent){
+        echo '<script>window.location.href="../cours/requestSent.php";</script>'; // suppossing that the mail sending protocol and  config file are correct and smtp server is running 
+    }else {
+        echo '<script>window.location.href="../cours/requestFailed.php";</script>';
+    }
+    
     
 
 }

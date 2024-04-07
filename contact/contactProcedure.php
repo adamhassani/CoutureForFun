@@ -4,6 +4,7 @@ if (isset($_POST['contactContact'])) {
     $nom = $_POST['nomContact'];
     $addresse = $_POST['mailContact'];
     $description = $_POST['descriptionContact'];
+
     $subject = "Description pour contact";
     $message = $description;
     $headers = "From: ".$addresse." \r\n";
@@ -12,8 +13,11 @@ if (isset($_POST['contactContact'])) {
     // Send email
     $mailSent = mail($mailDest, $subject, $message, $headers);
     
-    
-    echo '<script>window.location.href="../cours/requestSent.php";</script>'; // suppossing that the mail sending protocol and  config file are correct and smtp server is running 
+    if ($mailSent){
+        echo '<script>window.location.href="../cours/requestSent.php";</script>'; // suppossing that the mail sending protocol and  config file are correct and smtp server is running 
+    }else {
+        echo '<script>window.location.href="../cours/requestFailed.php";</script>';
+    }
     
 
 }

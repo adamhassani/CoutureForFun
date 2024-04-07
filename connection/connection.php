@@ -46,11 +46,6 @@
                                         <!-- stock -->
                                         <input type="hidden" id ="formmdp" name="mdpConn" />
 
-                                        <div class="form-check mb-4">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                            <label class="form-check-label" for="formCGU">Ne te souvient pas de moi</label>
-                                        </div>
-
                                         <div class="d-flex justify-content-end pt-3 mb-1">
                                             <button type="submit" class="btn btn-blue btn-block w-100 rounded-4" name="connection">Se connecter</button>
                                         </div>
