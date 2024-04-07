@@ -1,5 +1,5 @@
 <?php
-$mailDest = "ali.terro@etu.unilim.fr";
+$mailDest = "coutureForFun@mail.com";
 if (isset($_POST['contactContact'])) {
     $nom = $_POST['nomContact'];
     $addresse = $_POST['mailContact'];
